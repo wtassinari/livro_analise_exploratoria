@@ -1,0 +1,163 @@
+---
+title: "Análise Exploratória de Dados"
+author: "Manoel F. de S. Pereira"
+date: '2023-03-11'
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# install.packages("KableExtra")
+# install.packages("flextable")
+# library(kableExtra)
+# library(tidyverse)
+library(flextable)
+
+PAPEL <- c("FCFL11", "CVBI11", "CTXT11", "IBFF11", "KNRI11", 
+           "HFOF11", "EURO11", "FIGS11", "HGBS11", "PRSV11", 
+           "HOSI11", "VSHO11", "SADI11", "BNFS11", "BTLG11")
+
+MANDATO <- c("RENDA", "TIT E VAL MOB", "DESENV P RENDA",
+             "TIT E VAL MOB", "RENDA", "TIT E VAL MOB",
+             "RENDA", "RENDA", "RENDA", "RENDA", "HIBRIDO",
+             "RENDA", "TIT E VAL MOB", "DESENV P RENDA",
+             "RENDA")
+
+SEGMENTO <- c("OUTROS", "TIT E VAL MOB", "LAJES CORPOR", 
+              "TIT E VAL MOB", "HIBRIDO", "TIT E VAL MOB", 
+              "LOGISTICA", "SHOPPINGS", "SHOPPINGS", 
+              "LAJES CORPOR", "HIBRIDO", "SHOPPINGS",
+              "TIT E VAL MOB", "OUTROS", "LOGISTICA")
+
+DIV_YIELD <- c(5.6, 9.4, 11.3, 7.1, 5, 
+               7.7, 5.4, 3.5, 3.1, 5.6, 
+               3.2, 2.5, 3.5, 9, 5.6)
+
+RETORNO <- c(-1.68, 3.14, -18.14, -4.85, 
+             -1.55, -0.74, -1.53, 1.28,
+             0.1, -9.88, -10.04, -2.98,
+             -5.8, 2.16, 1.29)
+
+df <- data.frame(PAPEL, MANDATO, SEGMENTO, DIV_YIELD, RETORNO)
+
+```
+
+## Introdução
+
+Os Fundos de Investimento Imobiliário (FIIs) tornaram-se bastante
+populares, principalmente por sua baixa volatilidade e pela  possibilidade de o investidor ter acesso a rendimentos mensais, quando comparado a outros ativos de renda variável. Além disso, os FIIs proporcionam vantagens quanto à diversificação, liquidez, custo e retorno em relação a outras modalidades de investimentos, como a poupança (Kucko, 2007). 
+
+Em geral, os FIIs geram uma percepção de ser um investimento de baixo risco. No entanto, existe duas principais fontes de riscos: as variações nos preços da cotas negociadas na bolsa de valores e as rendas geradas (dividendos, aluguéis e etc) mediante a natureza do FII.
+
+## Objetivo
+
+O principal objetivo deste trabalho é realizar uma análise exploratória de dados dos Fundos de Investimento Imobiliário a partir de uma pequena amostra de dados. Serão apresentadas as principais estatísticas descritivas e gráficos para resumir o conjunto de dados analisados.
+
+## Fonte de Dados
+
+A base de dados analisada contém `r ncol(df)` variáveis (**`r names(df)`**) e `r nrow(df)` observações que foram coletadas no site Fundamentus ^[<www.fundamentus.com.br> acessado em Janeiro de 2023.].
+
+A variável **PAPEL** representa os nomes dos FIIs  negociados na bolsa de valores brasileira. A variável **MANDATO** representa qual é o objetivo que os FIIs desejam alcançar com seus investimentos. A variável **DIV YIELD** (abreviação de *Dividend Yield*) representa as taxas de rendimentos distribuídos aos acionistas, conforme o valor de suas cotas negociadas na bolsa de valores. Ela é calculada dividindo o rendimento pelo valor da cota, $P_t$, e multiplicada por 100 para se obter a taxa do Dividend Yield:
+
+$DIV-YIELD =\frac{1}{P_t}\sum_{i = 1}^{12}{ Rend_i} x 100$
+
+O rendimento $Rend_i$ é obtido a partir da soma dos rendimentos distribuídos nos últimos doze meses ^[Também conhecido como *Dividend Yield* anualizado.]. A variável **RETORNO** representa a variação percentual mensal, ocorrida entre os preços do títulos referentes ao último dia útil de cada mês. 
+
+$RETORNO = \frac{P_t}{P_{t-1}}$
+
+Por exemplo, se o preço na data atual $P_t$, for maior do que o preço do mês anterior $P_{t-1}$, então o **PAPEL** valorizou. Caso contrário, houve desvalorização. A tabela 1 apresenta a amostra de dados utilizada neste trabalho. 
+
+```{r, echo = FALSE, warning=FALSE}
+
+# Não funciona no word
+# kable(df,
+#       caption = "Tabela 1: Base de Dados") %>% 
+#   kable_styling(bootstrap_options = "responsive",
+#                 full_width = FALSE,
+#                 font_size = 12)
+
+set_flextable_defaults(font.size = 11, 
+                       font.color = "#303030",
+                       table.layout = "autofit",
+                       decimal.mark = ",")
+
+tab <- flextable(df)
+tab <- set_caption(tab, "Tabela 1: Amostra da Base de Dados")
+tab
+
+```
+
+## Resultados
+
+O gráfico de barras que reúne, simultaneamente, duas ou mais informações numa única barra é conhecido na literatura como barras empilhadas.
+No gráfico 1, pode-se observar que: o segmento títulos e valores mobiliários têm 4 papéis, com mandato similar ao segmento; o segmento shoppings têm 3 papéis, com mandato para geração de renda; o segmento outros têm 2 papéis, com dois mandatos (desenvolvimento para renda e geração de renda); o segmento logística têm 2 papéis, com mandato para geração de renda; o segmento lajes corporativas têm 2 papéis, com dois mandatos (desenvolvimento para renda e geração de renda); e, por fim, o segmento híbrido têm 2 papéis, com dois mandatos (híbrido e geração de renda).
+
+```{r echo=FALSE, fig.height=4, fig.width=6, fig.cap="Gráfico 1: Segmentos e Mandatos"}
+
+barra_emp <- df[, c(2, 3)]
+
+par(xpd = TRUE)
+barplot(table(barra_emp),
+        col = c("gray0", "gray70", "gray90", "gray99"),
+        las = 1,
+        cex.names = 0.5,
+        horiz = TRUE)
+
+legend("bottom",
+       legend = c("DESENV P RENDA", "HIBRIDO", "RENDA", 
+                  "TIT E VAL MOB"), 
+       fill = c("gray0", "gray50", "gray85", "gray99"),
+       horiz = TRUE,
+       inset = c(0, -0.35),
+       cex = 0.6)
+```
+
+No gráfico 2 a quantidade de papéis que apresentaram valorização ou desvalorização de acordo com o segmento. Pode-se observar que todos os segmentos sofreram com desvalorização nos preços dos ativos. Os setores de títulos e valores mobiliários, híbrido e lajes corporativas tiveram mais papéis com desvalorização.
+
+```{r echo=FALSE, fig.height=4, fig.width=6, fig.cap="Gráfico 2: Valorização por Segmento"}
+
+barra_emp$VALORIZACAO <- ifelse(test = df$RETORNO > 0,
+                                yes = "SIM",
+                                no = "NÃO")
+par(xpd = TRUE)
+barplot(table(barra_emp$VALORIZACAO, barra_emp$SEGMENTO),
+        beside = TRUE,
+        col = c("gray30", "gray90"),
+        las = 1,
+        cex.names = 0.5,
+        horiz = TRUE)
+
+legend(x = "bottom",
+       legend = c("NAO", "SIM"),
+       fill = c("gray30", "gray90"),
+       horiz = TRUE,
+       inset = c(0, -0.35),
+       title = "VALORIZAÇÃO",
+       cex = 0.6)
+
+```
+
+O boxplot é um gráfico que se baseia em cinco números de um conjunto de dados: valor mínimo, o valor máximo, os primeiro e terceiro quartis e a mediana. Eles fornecem um bom resumo para conjuntos de dados muito grandes.
+Sabemos que o primeiro quartil é um número extraído da base de dados que representa 25% dos dados. O terceiro quartil é um número que representa 75% dos dados. Portanto, a largura da caixa representa os 50% intermediários do conjunto de dados. A mediana é representada neste gráfico através da linha mais espessa que fica entre os primeiro e terceiro quartis. Os 25% superiores e inferiores dos dados, fora dos quartis, são representados por “bigodes” que se estendem até os valores mínimo e máximo. 
+
+Este gráfico mostra uma maneira convencional para descobrir outliers, pontos localizados acima ou abaixo da boxplot. Eles podem ter um impacto importante nas suposições feitas para inferência estatística e, portanto, esta informação é muito valiosa.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Gráfico 3: Dividend Yield e Retorno"}
+
+boxplot(x = df$DIV_YIELD, df$RETORNO,
+        names = c("Dividend Yield","Retorno"))
+
+abline(h = 0, lty = "dashed")
+
+ind <- which.min(df$RETORNO)
+ativo <- df[ind, 1]
+text(x = 2,
+     y = (min(df$RETORNO) + 1.5),
+     labels = ativo)
+
+```
+
+
+## Referências Bibliográficas
+KUCKO, Irena. Investment Fund Portfolio Selection Strategy. Business: Theory and Practice, VIII: 214-220, 2007

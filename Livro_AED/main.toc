@@ -1,0 +1,245 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {I}{Seção I}}{7}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Download e instalação do Software R}{9}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Sobre o R}{9}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Download e instalação do R}{9}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Download e instalação do RStudio}{13}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Sobre o RStudio}{13}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Download e instalação do RStudio}{13}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Introdução ao Software R}{17}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Console}{17}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Script}{17}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Pacotes}{18}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Operações matemáticas básicas}{19}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Armazenamento de dados}{19}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Operadores lógicos}{20}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Arquivos do R}{21}{section.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Estrutura de dados}{21}{section.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.1}Vetores}{21}{subsection.3.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Manipulação de vetores}{22}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Operações com vetores}{23}{section*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.2}Matrizes}{24}{subsection.3.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Operações com matrizes}{25}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.3}Data-frame}{25}{subsection.3.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.4}Listas}{26}{subsection.3.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.9}Importação de conjunto de dados para o R}{27}{section.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {II}{Seção II}}{29}{part.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Tipos de variáveis}{31}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Variáveis quantitativas}{31}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Variáveis qualitativas}{32}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Tabelas}{33}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Normas para construção de tabelas}{33}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Elementos de uma tabela}{33}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Tabelas de distribuição de frequências}{35}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Distribuição de frequências para dados qualitativos}{35}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Distribuição de frequências para dados quantitativos}{37}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tabela para dados quantitativos discretos}{37}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tabela para dados quantitativos contínuos}{38}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Gráficos}{43}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Gráficos de colunas e barras}{43}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Gráfico de colunas (ou gráfico de barras verticais)}{43}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um gráfico de colunas}{43}{section*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Gráfico de barras (ou gráfico de barras horizontais)}{45}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um gráfico de barras}{45}{section*.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Gráfico de setores}{46}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um gráfico de setores}{46}{section*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Diagrama de linhas}{48}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um diagrama de linhas}{48}{section*.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Histograma}{50}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um histograma}{50}{section*.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Polígono de frequências}{52}{section.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um polígono de frequências}{52}{section*.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Ramo e folhas}{55}{section.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.7}Gráfico de Série Temporal}{57}{section.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir um gráfico de série temporal}{58}{section*.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Medidas de posição}{61}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Introdução}{61}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Somatório}{61}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Variáveis e índices}{61}{subsection.7.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}Notação de somatório}{62}{subsection.7.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.3}Propriedades de somatório}{63}{subsection.7.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Média aritmética}{64}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Média aritmética (para dados brutos)}{64}{subsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}Média aritmética (para dados agrupados)}{65}{subsection.7.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Propriedades da média}{67}{section*.54}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Mediana}{68}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Mediana para dados brutos}{68}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Número ímpar de dados (n ímpar)}{68}{section*.56}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Número par de dados (n par)}{68}{section*.57}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fórmula para calcular a mediana}{68}{section*.58}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}Mediana para dados agrupados}{69}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Mediana para dados discretos agrupados}{69}{section*.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Mediana para dados contínuos agrupados}{71}{section*.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Propriedades da mediana}{72}{section*.65}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Moda}{72}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.1}Moda para dados brutos}{72}{subsection.7.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.2}Moda para dados agrupados}{73}{subsection.7.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Moda para dados discretos agrupados}{73}{section*.66}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Moda para dados contínuos agrupados}{74}{section*.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.3}Moda para dados qualitativos}{76}{subsection.7.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Propriedades da moda}{76}{section*.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Utilização das medidas de tendência central}{76}{section.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Medidas separatrizes (quantis)}{77}{section.7.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.1}Quartis para dados brutos}{77}{subsection.7.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Obtendo os quartis de um conjunto com um número ímpar de dados}{77}{section*.74}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Obtendo os quartis de um conjunto com um número par de dados}{79}{section*.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.2}Quartis para dados agrupados}{80}{subsection.7.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Determinação do 1º quartil}{80}{section*.76}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Determinação do 3º quartil}{80}{section*.77}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.3}Percentis}{82}{subsection.7.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.8}Boxplot}{83}{section.7.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passos para construir o Boxplot}{84}{section*.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.8.1}Boxplot comparativo}{85}{subsection.7.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Medidas de dispersão}{89}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Amplitude}{89}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Desvio médio absoluto}{90}{section.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Variância}{92}{section.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}Variância para dados brutos}{92}{subsection.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Observação}{93}{section*.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fórmula alternativa da variância}{93}{section*.90}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}Variância para dados agrupados}{94}{subsection.8.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Desvio padrão}{96}{section.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Coeficiente de variação}{96}{section.8.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Solução}{97}{section*.95}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Propriedades das Medidas de Dispersão}{99}{section.8.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Assimetria e curtose}{101}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Assimetria}{101}{section.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Distribuição simétrica (ou assimetria nula)}{102}{section*.99}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Distribuição assimétrica à direita (ou positiva)}{102}{section*.101}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Distribuição assimétrica à esquerda (ou negativa)}{102}{section*.103}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Coeficiente momento de assimetria}{103}{section*.105}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Curtose}{105}{section.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Análise Bivariada}{109}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Variáveis qualitativas}{109}{section.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.1}Tabelas de contingência e gráficos da distribuição conjunta}{109}{subsection.10.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.2}Associação entre Variáveis Qualitativas}{111}{subsection.10.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.3}Qui-quadrado $(\chi ^2)$}{114}{subsection.10.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1.4}Coeficiente de contingência}{116}{subsection.10.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Variáveis quantitativas}{117}{section.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.1}Gráfico de dispersão}{117}{subsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.2}Coeficiente de correlação}{119}{subsection.10.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Definição}{119}{section*.122}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{123}{chapter*.124}%
+\contentsfinish 

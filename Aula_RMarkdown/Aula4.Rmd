@@ -1,0 +1,1418 @@
+---
+# title: "Relatórios dinâmicos com R Markdown"
+# author: "Prof. Diógenes Ferreira Filho"
+# date: "30/05/2023"
+output: 
+  bookdown::pdf_document2:
+    number_sections: yes
+    latex_engine: xelatex
+    toc: false
+#sansfont: Calibri
+#toc-title: "Sumário"
+linkcolor: black
+bibliography: references.bib
+link-citations: yes
+csl: associacao-brasileira-de-normas-tecnicas.csl
+# csl: https://raw.githubusercontent.com/citation-style-language/styles/master/associacao-brasileira-de-normas-tecnicas.csl
+
+
+header-includes:
+# - \usepackage[T1]{fontenc}
+# - \usepackage{fontspec}
+# - \setmainfont{Arial}
+- \usepackage{floatrow}
+- \floatsetup[figure]{capposition=bottom}
+- \floatsetup[table]{capposition=top}
+- \usepackage[brazil]{babel}
+- \linespread{1.5}
+- \usepackage{graphicx}
+- \usepackage{cite}
+- \usepackage{lipsum}
+- \usepackage{indentfirst}
+- \usepackage{booktabs}
+- \setlength{\parindent}{1.5cm}
+- \usepackage{fancyvrb}
+- \usepackage{fvextra}
+- \usepackage[many]{tcolorbox}
+
+- \newtcbox{\myboxline}{enhanced,nobeforeafter,tcbox raise base,breakable,colback=white!5!white,colframe=black!5!white,bottom=0pt,top=0pt,right=0pt,left=0pt,drop fuzzy shadow}
+
+- \newtcolorbox{mybox}{enhanced,colback=white!5!white,colframe=black!5!white,boxrule=1pt,drop fuzzy shadow}
+
+---
+
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabela}
+
+\newpage
+\thispagestyle{empty}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+```
+
+
+```{r echo=FALSE,fig.align="center", out.width='20%'}
+knitr::include_graphics('C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/logo_ufrrj.png')
+```
+\bigskip
+\begin{nobreak}
+
+\begin{center}
+
+
+\large \textbf{UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO}
+
+\textbf{INSTITUTO TRÊS RIOS}
+
+\textbf{DEPARTAMENTO DE CIÊNCIAS ECONÔMICAS E EXATAS}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\Large PROF. DIÓGENES FERREIRA FILHO
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\huge Relatórios dinâmicos com R Markdown\\ TR241 - Estatística Computacional
+
+
+\vspace*{\fill}
+
+\Large Três Rios
+
+\Large 2023
+
+
+\end{center}
+
+
+
+\end{nobreak}
+
+
+
+\newpage
+
+
+\begin{center}
+\renewcommand{\contentsname}{Sumário}
+\setcounter{tocdepth}{5}
+\tableofcontents
+
+\end{center}
+
+
+\newpage
+
+
+
+\pagebreak
+
+# Introdução 
+
+
+Markdown é uma sintaxe de formatação simples para a criação de documentos HTML, PDF e MS Word. No R Markdown podemos escrever textos, marcações e executarmos códigos. Ele possibilita a utilização de códigos em R, Python, Markdown, HTML, CSS, SQL, entre outros em um único arquivo.  
+
+O R Markdown é executado no RStudio e, ao clicar no botão **Knit** (Figura \ref{fig:knit}), será gerado um documento que inclui tanto o texto quanto a saída de trechos de código R (ou outra linguagem) incorporados no documento. 
+
+\begin{figure}
+\mybox
+```{r knit, echo=FALSE, out.width = '100%', fig.align = "center"}
+knitr::include_graphics("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/Knit.png")
+```
+\endmybox
+\caption{Botão Knit para gerar o documento de saída do R Markdown}
+\label{fig:knit}
+\end{figure}
+
+
+
+Você pode incorporar um trecho de código R como este:
+
+```{r cars}
+summary(cars)
+```
+ 
+Você também pode incorporar gráficos no documento, por exemplo (Figura \ref{fig:graf1}):
+
+```{r graf1, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=6, fig.cap="Gráfico gerado no R"}
+
+# Carregando o pacote tidyverse
+library(tidyverse)
+
+# Gráfico de dispersão das variáveis displ x hwy do data.frame mpg
+# separando as curvas de tendência por categorias da variável drv
+ggplot(data = mpg) + 
+  geom_smooth(mapping = aes(x = displ, y = hwy, color=drv, linetype=drv))+
+  geom_point(mapping = aes(x = displ, y = hwy, color=drv))
+```
+
+
+\vspace{0.3cm}
+
+# Arquivos do R Markdown
+
+## Arquivos simples e Templates
+
+O arquivo do R Markdown onde o texto e os códigos são digitados tem extensão *.rmd*. O R Markdown permite que você crie um novo documento simples ou que você crie um documento a partir de um template. Os templates disponíveis dependem dos pacote instalados. A seguir são apresentados alguns exemplos de pacotes com templates para o R Markdown:
+
+* `bookdown`: livros;
+
+* `blogdown`: blogs e sites;
+
+* `pagedown`: templates para currículos, cartas e trabalhos acadêmicos;
+
+* `xaringan` e `xaringanthemer`: templates para apresentações;
+
+* `prettydoc`: templates para documentos HTML;
+
+* `flexdashboard`: dashboards estáticos;
+
+* `rticles`: templates para artigos de várias revistas científicas.
+
+
+## Criando um novo documento do R Markdown
+
+Para criar um novo documento R Markdown clique em: 
+
+* `File - New File - R Markdown...`;
+
+* Selecione a opção **Document** (irá iniciar um documento simples);
+
+* Digite o título do documento na caixa de texto **Title**, e o nome do autor na caixa de texto **Author**;
+
+* Selecione o formato de saída do arquivo **Default Output Format** (HTML, PDF ou MS Word).
+
+
+Para gerar um documento do R Markdown em formato PDF o pacote `tinytex` (que é um compilador de \LaTeX $~$ instalado diretamente no R) deve estar instalado. Caso o `tinytex` não esteja instalado utilize os comandos a seguir para instalá-lo:
+
+```{r, eval=FALSE}
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+
+## Elementos do arquivo *.rmd*
+
+### Cabeçalho YAML
+
+Um cabeçalho YAML contém metadados básicos sobre o documento e instruções de renderização, como “título”, “autor” e “formato de saída”, delimitados por três traços (`---`) em cada extremidade. A seguir é apresentado um exemplo de um cabeçalho YAML:
+
+\mybox
+````
+---
+title: "Nome do documento"
+author: "Nome do autor"
+date: "30/05/2023"
+output: pdf_document
+---
+````
+\endmybox
+
+### Blocos de códigos (*Chunks*)
+
+O R Markdown permite integrar códigos do R (e de outras linguagens de programação) no documento através de *chunks* ou códigos *inline*. Para inserir um *chunk*, clique em `Code - Insert Chunk` (ou pressione `Ctrl + Alt + I`) e um bloco de código aparecerá: 
+
+````{verbatim}
+```{r}
+
+```
+````
+Dentro do chunk, delimitado por ` ```{r}   ``` `, você pode escrever e executar o código R. Por exemplo:
+
+
+````{verbatim}
+```{r}
+summary(cars)
+```
+````
+
+```{r, echo=FALSE}
+summary(cars)
+```
+
+
+Existe um *chunk* que tem um comportamento especial, chamaremos de *chunk setup* (o nome do *chunk* é opcional e é colocado após a letra "`r`"). Este *chunk* é executado antes que qualquer código seja executado e faz configurações gerais para todos os *chunks*.
+
+
+````{verbatim}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+````
+\vspace{-0.3cm}
+
+Você também pode exibir o resultado do código no painel de origem (antes de gerar o documento final) clicando no ícone `Run Current Chunk` (setinha verde no canto direito superior do *chunk*) (Figura \@ref(fig:runchunk) ) ou mantendo o cursor sobre o *chunk* e pressionando as teclas `Ctrl + Enter`. 
+
+
+\begin{figure}
+\mybox
+```{r runchunk, echo=FALSE, out.width = '100%', fig.align = "center"}
+knitr::include_graphics("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/Run_chunk.png")
+```
+\endmybox
+\caption{Ícone para executar o chunk no painel de origem}
+\label{fig:runchunk}
+\end{figure}
+
+ 
+\bigskip
+
+#### Argumentos do *chunk* 
+
+&nbsp;
+
+Existem diversos argumentos que podem ser inseridos no *chunk* para customizá-lo. Os principais argumentos são:
+
+* `eval = FALSE`: o código do *chunk* não é executado;
+
+* `include = FALSE`: o código é executado, mas não mostra nem o código e nem os resultados;
+
+* `echo = FALSE`: o código é executado e apenas os resultados são exibidos;
+
+* `message = FALSE` ou `warning = FALSE`: evita que mensagens ou avisos apareçam no arquivo final;
+
+* `error = TRUE`: continua a geração do relatório final mesmo se o código retornar um erro.
+
+\noindent \textbf{Exemplo:} No *chunk* a seguir foram acrescentados os argumentos `echo = FALSE`, `message = FALSE` e `warning = FALSE`.Neste caso apenas os resultados da análise deste *chunk* (sem códigos e nem mensagens de aviso) seriam exibidos no documento de saída.
+
+````{verbatim}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+summary(cars)
+```
+````
+\vspace{-0.1cm}
+As opções do *chunk* devem ser escritas em uma única linha. Nenhuma quebra de linha é permitida dentro das opções do *chunk*. Ao inserir os argumentos do *chunk* tome o cuidado de separá-los por vírgula e não inserir nenhuma quebra de linha. No exemplo a seguir os argumentos dentro do *chunk* foram todos inseridos em uma única linha. Embora no arquivo de saída (*.pdf*) os argumentos sejam reajustados em duas linhas (devido a falta de espaço da página), no arquivo *.rmd* a tecla *Enter* não deve ser pressionada antes de terminar de digitar a linha dos argumentos do *chunk*:
+
+
+
+\par\noindent \begin{tcolorbox}[enhanced, colback=gray!5, colframe=gray!5,sharp corners,no shadow,left=0pt, top=0pt, grow to left by=0.1cm, grow to right by=0.1cm]
+\noindent \texttt{\`{}\`{}\`{}\{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=6, fig.cap="Gráfico de dispersão das variáveis displ x hwy"\}}
+\end{tcolorbox}
+
+
+### Códigos *inline*
+
+O R Markdown também permite inserir trechos de código R no meio do texto, chamado de código *inline*, utilizando a sintaxe: `` `r ` ``, em que o código deve ser escrito após a letra `r`.
+
+\
+
+\noindent \textbf{Exemplo:} Podemos usar o código *inline*: `` `r knitr::inline_expr("mean(cars$dist)")` ``, para calcular a média da variável `speed` do conjunto de dados `cars` e inserir esta informação no meio do texto. 
+
+\noindent O texto com o código *inline* fica assim:
+
+\mybox
+A média da variável `speed` do conjunto de dados `cars` é  `` `r knitr::inline_expr("mean(cars$dist)")` ``.
+\endmybox
+
+\noindent A saída fica assim:
+
+\mybox
+A  média da variável `speed` do conjunto de dados `cars` é  `r mean(cars$dist)`.
+\endmybox
+
+
+
+# Formatação de texto
+
+## Formatações simples de texto em linguagem de marcação
+
+A seguir são apresentadas algumas regras de formatação de texto no R Markdown:
+
+* **Itálico:** Para colocar um texto em itálico a expressão a ser formatada deve ficar entre astericos, por exemplo, a marcação  \myboxline{*texto em itálico*}$~$ resulta em \myboxline{\itshape{texto em itálico}}$~$;
+
+* **Negrito:** Para colocar um texto em negrito a expressão a ser formatada deve ficar entre astericos duplos, por exemplo, a marcação \myboxline{**texto em negrito**}$~$ resulta em \myboxline{\textbf{texto em negrito}}$~$;
+
+* **Negrito e itálico:** Para colocar um texto em negrito e itálico a  expressão a ser formatada deve ficar entre astericos triplos, por exemplo, a marcação \myboxline{***texto em negrito e itálico***}$~$ resulta em  \myboxline{\itshape{\textbf{texto em negrito e itálico}}}$~$;
+
+* **Formatação de código:** Para colocar um texto em formatação de código a expressão a ser formatada deve ficar entre aspas simples invertidas, por exemplo, a marcação \myboxline{\texttt{`}formatação de código\texttt{`}}$~$ resulta em \myboxline{\texttt{formatação de código}}$~$.
+
+* **Texto sobrescrito:** Para colocar um texto sobrescrito a expressão a ser sobrescrita deve ficar entre acentos circunflexos, por exemplo, a marcação \myboxline{sobrescrito\text{\^{}2\^{}}}$~$ resulta em \myboxline{sobrescrito$^2$}$~$;
+
+* **Texto subscrito:** Para colocar um texto subscrito a expressão a ser subscrita deve ficar entre til's (\~), por exemplo, a marcação \myboxline{subscrito\text{\~{}2\~{}}}$~$ resulta em \myboxline{subscrito$_2$}$~$;
+
+Podemos também fazer combinações destas regras simples de formatação de texto, por exemplo, negrito e itálico e sobrescrito:Por exemplo, a marcação a marcação \myboxline{***sobrescrito\text{\^{}2\^{}}***}$~$ resulta em \myboxline{\itshape{\textbf{sobrescrito\text{$^2$}}}}$~$.
+
+## Formatações mais avançadas de texto utilizando linguagem \LaTeX
+
+As opções de formatação de texto a seguir são para documentos R Markdown cujo formato de saída selecionado é PDF então a maioria destas opções utilizam sintaxe do \LaTeX.
+
+### Alterar a cor do texto
+
+Para alterar a cor do texto utilize a seguinte sintaxe: `` \textcolor{red}{texto em vermelho}`` (neste caso utilizamos a cor vermelha: `red`) que terá a seguinte saída: \myboxline{\textcolor{red}{texto em vermelho}}$~$. 
+
+
+### Alterar a cor do fundo do texto
+
+Para alterar a cor do fundo do texto utilize a sintaxe: `` \colorbox{yellow}{texto com fundo amarelo} `` que resultará na saída: \myboxline{\colorbox{yellow}{texto com fundo amarelo}}$~$.
+
+
+### Texto sublinhado
+
+Para sublinhar um texto do R Markdown você pode utilizar a seguinte sintaxe do \LaTeX: ``
+\underline{Texto sublinhado} `` que terá a seguinte saída: \myboxline{\underline{Texto sublinhado}}$~$.
+
+
+### Alterar o tamanho da fonte
+
+Em documentos do R Markdown com formato de saída em PDF você pode utilizar as seguintes opções do \LaTeX $~$ para alterar o tamanho da fonte:
+
+
+\begin{center}
+\begin{tabular}{l l l}
+\hline
+Comando & Exemplo de texto & Tamanho da fonte \\
+\hline
+\texttt{\textbackslash tiny} & \tiny Texto & 5pt \\
+\texttt{\textbackslash scriptsize} & \scriptsize Texto & 7pt \\
+\texttt{\textbackslash footnotesize} & \footnotesize Texto & 8pt \\
+\texttt{\textbackslash small} & \small Texto & 9pt \\
+\texttt{\textbackslash normalsize} & \normalsize Texto & 10pt \\
+\texttt{\textbackslash large} & \large Texto & 12pt \\
+\texttt{\textbackslash Large} & \Large Texto & 14.4pt \\
+\texttt{\textbackslash LARGE} & \LARGE Texto & 17.28pt \\
+\texttt{\textbackslash huge} & \huge Texto & 20.74pt \\
+\texttt{\textbackslash Huge} & \Huge Texto & 24.88pt \\
+\hline
+\end{tabular}
+\end{center}
+
+\
+
+Por exemplo, a sintaxe: `` \scriptsize texto pequeno \huge texto grande \normalsize texto normal ``, resulta na seguinte saída: \myboxline{\scriptsize texto pequeno \huge texto grande \normalsize texto normal}$~$.
+
+### Adicionar espaço em branco entre palavras
+
+Você pode também inserir espaços em branco entre palavras utilizando a sintaxe `$~~~$`. Quanto mais til's você utilizar maior será o espaço em banco. Por exemplo, a frase:
+
+\mybox
+Estamos `$~$` inserindo `$~~~$` espaços `$~~~~~~~~$` em branco `$~~~~~~~~~~~~~$` entre `$~~~~~~~~~~~~~~~~~~$` as palavras, 
+\endmybox
+
+\noindent tem a seguinte saída:
+
+\mybox
+Estamos $~$ inserindo $~~~$ espaços $~~~~~~~~$ em branco $~~~~~~~~~~~~~$ entre $~~~~~~~~~~~~~~~~~~$ as palavras.
+\endmybox
+
+\vspace{0.3cm}
+### Adicionar espaço em branco entre linhas
+
+Você pode adicionar espaços em branco entre as linhas utilizando uma barra invertida no início da linha, como no exemplo a seguir:
+
+\mybox
+Texto 1 - Texto 1 - Texto 1 - Texto 1 - Texto 1 - Texto 1
+
+\\
+
+Texto 2 - Texto 2 - Texto 2 - Texto 2 - Texto 2 - Texto 2
+
+\\
+
+\\
+
+Texto 3 - Texto 3 - Texto 3 - Texto 3 - Texto 3 - Texto 3
+
+\\
+
+\\
+
+\\
+
+\\
+
+Texto 4 - Texto 4 - Texto 4 - Texto 4 - Texto 4 - Texto 4
+\endmybox
+
+\vspace{0.3cm}
+\noindent A saída será a seguinte:
+
+\mybox
+Texto 1 - Texto 1 - Texto 1 - Texto 1 - Texto 1 - Texto 1
+\
+Texto 2 - Texto 2 - Texto 2 - Texto 2 - Texto 2 - Texto 2
+\
+\
+Texto 3 - Texto 3 - Texto 3 - Texto 3 - Texto 3 - Texto 3
+\
+\
+\
+\
+Texto 4 - Texto 4 - Texto 4 - Texto 4 - Texto 4 - Texto 4
+\endmybox
+$~$
+
+Existem, ainda, outras funções do \LaTeX $~$ que podem ser utilizadas para inserir espaços em branco entre linhas, como por exemplo:  `\bigskip` ou `\vspace*{\fill}` ou `\vspace{0.3cm}` (neste último você pode especificar a altura, em cm, do espaço em branco).
+
+
+
+
+### Quebra de página
+
+Para adicionar uma quebra de página utilize o comando `\pagebreak` abaixo da linha onde deve ocorrer a quebra de página.
+
+
+# Seções e subseções
+
+No R Markdown podemos inserir seções e subseções usando cerquilhas (#). Por exemplo:
+
+\mybox
+\noindent \# Seção nível 1
+
+\noindent \#\# Subseção nível 2
+
+\noindent \#\#\# Subseção nível 3
+
+\noindent \#\#\#\# Subseção nível 4
+
+\noindent \#\#\#\#\# Subseção nível 5
+\endmybox
+
+\vspace{0.3cm}
+
+\noindent A seguir pode-se observar a saída dessas seções:
+
+\mybox
+```{r secoes, echo=FALSE, out.width = '24%', fig.align = "left"}
+knitr::include_graphics("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/secoes.png")
+```
+\endmybox
+
+Podemos adicionar a configuração "`number_sections: true`" no cabeçalho YAML (respeite a identação) para que as seções sejam numeradas automaticamente:
+
+\mybox
+````
+---
+title: "Nome do documento"
+author: "Nome do autor"
+date: "30/05/2023"
+output: 
+  pdf_document:
+    number_sections: true
+---
+````
+\endmybox
+
+\vspace{0.3cm}
+\noindent Neste caso, a saída das seções será:
+\vspace{0.3cm}
+
+\mybox
+```{r secoes_num, echo=FALSE, out.width = '35%', fig.align = "left"}
+knitr::include_graphics("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/secoes_num.png")
+```
+\endmybox
+
+# Listas
+
+## Listas não ordenadas
+
+Uma lista não ordenada deve começar com asterisco. Por exemplo:
+
+\vspace{0.1cm}
+\noindent \* Item 1
+\
+\* Item 2
+
+\noindent A saída desta lista será:
+
+\mybox
+
+* Item 1
+* Item 2
+
+\endmybox
+
+
+\noindent Para incluir subitens na lista não ordenada use tabulações nos subitens. Por exemplo:
+
+\vspace{0.1cm}
+\noindent \* Item 1
+
+\noindent $~~~~~~~$\* Item 1.1
+
+\noindent $~~~~~~~$\* Item 1.2
+
+\noindent \* Item 2
+
+\noindent $~~~~~~~$\* Item 2.1
+
+\noindent $~~~~~~~$\* Item 2.2
+
+\vspace{0.1cm}
+\noindent A saída desta lista será:
+
+\mybox
+
+* Item 1
+  * Item 1.1
+  * Item 1.2
+* Item 2
+  * Item 2.1
+  * Item 2.2
+  
+\endmybox
+  
+## Listas ordenadas
+
+Uma lista ordenada deve começar com a letra ou um número. 
+
+&nbsp;
+
+\noindent \textbf{Exemplo:} na lista a seguir todos os itens são precedidos do número "1":
+
+\noindent `1`. Item 1 
+
+\noindent `1`. Item 2 
+
+\noindent `1`. Item 3 
+
+\vspace{0.1cm}
+\noindent Na saída desta lista os valores dos itens são renumerados automaticamente:
+
+\mybox
+
+1. Item 1
+1. Item 2
+1. Item 3
+
+\endmybox
+
+\vspace{0.1 cm}
+\noindent \textbf{Exemplo:} na lista a seguir todos os itens são precedidos da letra "a":
+
+\noindent `a`. Item 1
+
+\noindent `a`. Item 2
+
+\noindent `a`. Item 3
+
+\vspace{0.1cm}
+\noindent Na saída desta lista os valores dos itens são corrigidos automaticamente:
+
+\mybox
+
+a. Item 1
+a. Item 2
+a. Item 3
+
+\endmybox
+
+
+# Hiperlinks
+
+Os hiperlinks são criados usando a sintaxe `[texto](link)`. Por exemplo:
+
+* A sintaxe `[R Markdown](https://rmarkdown.rstudio.com/)` resulta em: [R Markdown](https://rmarkdown.rstudio.com/).
+
+Outra forma (exibindo o endereço): 
+
+* A sintaxe: `` <https://rmarkdown.rstudio.com/> `` resulta em: <https://rmarkdown.rstudio.com/>.
+
+\vspace{0.1cm}
+Para alterar a cor dos hiperlinks do texto para azul, mas mantendo a cor `black` para as referências cruzadas (Seção \@ref(src)), basta inserir o comando `linkcolor: black` no cabeçalho YAML.
+
+
+# Notas de rodapé
+
+As notas de rodapé são colocadas entre colchetes após um acento circunflexo `` ^[] ``. Por exemplo, utilizando a sintaxe: `` ^[Olá sou uma nota de rodapé.] ``, teremos a seguinte saída ^[Olá sou uma nota de rodapé.].$~~$ \textcolor{blue}{(\textit{Observe o rodapé da página})} 
+
+\vspace{0.5cm}
+
+# Citações
+
+As citações em bloco são escritas após o símbolo: `` > ``. Por exemplo, a sintaxe:
+
+
+\noindent \> "Penso, logo existo."
+\
+\noindent \>
+\
+\noindent \>\-\-\- René Descartes
+
+
+\noindent resulta em:
+
+\mybox
+
+> "Penso, logo existo."
+>
+>--- René Descartes
+
+\endmybox
+
+\vspace{0.3cm}
+
+# Imagens
+
+## Imagens externas
+
+A sintaxe para inserir imagens no texto é semelhante a sintaxe dos hiperlinks, basta adicionar um ponto de exclamação: 
+
+
+\begin{center}
+\begin{BVerbatim}
+![Título da imagem]("Local da imagem/imagem.png")
+\end{BVerbatim}
+\end{center}
+
+
+Podemos também controlar o tamanho da imagem inserindo mais um termo, por exemplo, com a porcentagem do tamanho da figura em relação ao tamanho original:
+
+
+\begin{center}
+\begin{BVerbatim}
+![Título da imagem]("Local da imagem/imagem.png"){width=20%}
+\end{BVerbatim}
+\end{center}
+
+
+\noindent Utilizando a sintaxe:
+
+\begin{center}
+\begin{BVerbatim}
+![Logo do R Markdown]("C:/Users/dffil/Aula RMarkdown/Figuras/rmarkdown.png"){width=20%}
+\end{BVerbatim}
+\end{center}
+
+\noindent será inserida a imagem:
+
+
+![Logo do R Markdown]("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/rmarkdown.png"){width=20%}
+
+\vspace{3cm}
+
+## Inserindo imagens externas com um *chunk*
+
+Você pode inserir uma imagem externa (não gerada pelo R) utilizando um *chunk* e o comando `knitr::include_graphics()`, como no exemplo a seguir:
+
+````{verbatim}
+```{r, echo=FALSE, out.width = '20%', fig.align = "center", fig.cap="Logo do 
+R Markdown - Imagem inserida usando um chunk"}
+knitr::include_graphics("C:/Users/dffil/Aula RMarkdown/Figuras/rmarkdown.png")
+```
+````
+
+
+
+```{r, echo=FALSE, out.width = '20%', fig.align = "center", fig.cap="Logo do R Markdown - Imagem inserida usando um chunk"}
+knitr::include_graphics("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/rmarkdown.png")
+```
+
+## Inserindo gráficos do R
+
+A seguir iremos inserir um gráfico do R, perado pelo pacote ggplot2, utilizando variáveis do conjunto de dados *mpg*.
+
+
+````{verbatim}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=6,
+fig.cap="Gráfico de dispersão das variáveis displ x hwy"}
+
+# Carregando o pacote tidyverse
+library(tidyverse)
+
+# Gráfico de dispersão das variáveis displ x hwy do data.frame mpg
+# separando as curvas de tendência por categorias da variável drv
+ggplot(data = mpg) + 
+  geom_smooth(mapping = aes(x = displ, y = hwy, color=drv, linetype=drv))+
+  geom_point(mapping = aes(x = displ, y = hwy, color=drv))
+```
+````
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=6, fig.cap="Gráfico de dispersão das variáveis displ x hwy"}
+
+# Carregando o pacote tidyverse
+library(tidyverse)
+
+# Gráfico de dispersão das variáveis displ x hwy do data.frame mpg
+# separando as curvas de tendência por categorias da variável drv
+ggplot(data = mpg) + 
+  geom_smooth(mapping = aes(x = displ, y = hwy, color=drv, linetype=drv))+
+  geom_point(mapping = aes(x = displ, y = hwy, color=drv))
+```
+
+
+\noindent \textbf{Observações:} 
+
+* Os argumentos do *chunk* devem ser escritos em uma única linha. Nenhuma quebra de linha é permitida na declaração dos argumentos do *chunk*. No exemplo acima os argumentos dentro do *chunk* foram todos inseridos em uma única linha. Embora no arquivo de saída (*.pdf*) os argumentos sejam reajustados em duas linhas (devido a falta de espaço da página), no arquivo *.rmd* a tecla *Enter* não deve ser pressionada antes de terminar de digitar a linha dos argumentos do *chunk*:
+\vspace{-0.2cm}
+
+\par\noindent \begin{tcolorbox}[enhanced, colback=gray!5, colframe=gray!5,sharp corners,no shadow,left=0pt, top=0pt, grow to left by=0.1cm, grow to right by=0.1cm]
+\noindent \texttt{\`{}\`{}\`{}\{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3, fig.width=6, fig.cap="Gráfico de dispersão das variáveis displ x hwy"\}}
+\end{tcolorbox}
+
+
+* Na declaração do *chunk* (depois do ``{r, ``) adicionamos argumentos do gráfico como altura (`fig.height`), largura (fig.width) e legenda (`fig.cap`). Também utilizamos a opção `echo=FALSE` para que os comandos do R não sejam exibididos no relatório, apenas as saídas (neste caso o gráfico), e as opções `message=FALSE` e `warning=FALSE` para que mensagens de aviso do R não sejam apresentadas no relatório.
+
+
+# Tabelas
+
+## Gerando tabelas simples no R Markdown
+
+Para construir tabelas no R Markdown:
+
+* Use barra ‘|’ para separar as colunas;
+
+* Use hifem ‘-’ entre barra ‘|’ para separar a linha título.
+
+
+
+\noindent \textbf{Exemplo:} A seguir é apresentada a forma de se escrever uma tabela no R Markdown:
+
+````
+Coluna 1 | Coluna 2
+- | - 
+Valor da céula (1,1) | Valor da céula (1,2) 
+Valor da céula (2,1) | Valor da céula (2,2) 
+````
+\noindent A saída desta tabela será:
+
+Coluna 1 | Coluna 2
+- | - 
+Valor da céula (1,1) | Valor da céula (1,2) 
+Valor da céula (2,1) | Valor da céula (2,2) 
+
+
+## Tabelas usando linguagem \LaTeX
+
+Podemos gerar uma tabela usando a sintaxe do \LaTeX:
+
+````
+\begin{table}[h]
+\centering
+\caption{Título da tabela}
+\begin{tabular} {c c}
+\hline
+Coluna 1 & Coluna 2 \\
+\hline 
+Valor da céula (1,1) & Valor da céula (1,2) \\
+Valor da céula (2,1) & Valor da céula (2,2) \\
+\hline
+\end{tabular}
+\end{table}
+````
+\noindent cuja saída será:
+
+\begin{center}
+\begin{table}[h]
+\caption{Título da tabela}
+\begin{tabular} {c c}
+\hline
+Coluna 1 & Coluna 2 \\
+\hline 
+Valor da céula (1,1) & Valor da céula (1,2) \\
+Valor da céula (2,1) & Valor da céula (2,2) \\
+\hline
+\end{tabular}
+\end{table}
+\end{center}
+
+\noindent \textbf{Observações:}
+
+* No \LaTeX $~$ as colunas de uma tabela são separadas utilizando o símbolo `&`;
+* O final de cada linha deve ser indicado por duas barras invertidas: `\\`;
+* As linhas horizontais que delimitam o cabeçalho e o final da tabela são indicadas pelo comando `\hline`;
+* O alinhamento das colunas é indicado após o comando `\begin{tabular}`. Assim o argumento `{c c}`, após o comando `\begin{tabular}` no exemplo acima, indica que o alinhamento das duas colunas será centralizado. Utiliza-se `l` para alinhamento à esquerda, `c` para centralizado e `r` para alinhamento à direita. 
+
+## Tabelas do R formatadas
+
+Por padrão o R Markdown apresenta data frames e matrizes da mesma forma como estes seriam apresentados no console. Veja o exemplo a seguir:
+
+
+```{r, message = FALSE, warning = FALSE}
+# Entrando com os dados no R:
+dados <- c("Fundamental","Médio","Médio","Superior","Médio","Médio",
+          "Médio","Médio","Fundamental","Fundamental","Superior","Fundamental",
+          "Superior","Fundamental","Médio","Médio","Médio","Médio",
+          "Fundamental","Médio","Superior","Fundamental","Superior","Médio",
+          "Médio","Fundamental","Médio","Médio","Médio","Fundamental",
+          "Fundamental","Fundamental","Superior","Fundamental","Médio","Médio")
+
+# Gerando a distribuição de frequências
+tab <- table(dados)
+
+# Mostrando a distribuição de frequências
+tab
+
+# Criando uma tabela com duas colunas: "Grau de instrução" e "Frequência"
+tabela <- cbind("Grau de instrução"=names(tab),"Frequência"=as.numeric(tab))
+tabela <- data.frame(tabela)
+tabela
+```
+
+Note que na saída acima a tabela não tem uma formatação apropriada, é simplesmente a saída de um data frame do R. Para formatar a tabela apropriadamente podemos utilizar a função `kable()` do pacote `kableExtra`:
+
+```{r, message = FALSE, warning = FALSE}
+
+# Carregando o pacote kableExtra
+library(kableExtra)
+
+# Gerando a tabela formatada com kable()
+kable(tabela)
+
+```
+
+\vspace{0.3cm}
+Para centralizar uma tabela gerada no R você pode utilizar os comandos do \LaTeX: `\begin{center}` antes do *chunk* e `\end{center}` depois do *chunk*:
+
+````{verbatim}
+\begin{center}
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+kable(tabela)
+```
+\end{center}
+````
+
+\begin{center}
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+kable(tabela)
+```
+\end{center}
+
+Também podemos utilizar a função `flextable()` do pacote `flextable` para gerar uma tabela com uma formatação apropriada:
+
+```{r, message = FALSE, warning = FALSE}
+
+# Carregando o pacote flextable
+library(flextable)
+
+# Escolhendo a fonte da tabela
+set_flextable_defaults(font.family = "Times New Roman")
+
+# Gerando a tabela formatada com flextable()
+ft <- flextable(tabela)
+
+# Ajustando a largura das colunas ao conteúdo
+ft <- autofit(ft) 
+
+#Ajustando os nomes das colunas
+ft <- set_header_labels(ft, Grau.de.instrução  = "Grau de instrução",
+                        Frequência = "Frequência")
+
+# Adicionando título na tabela
+ft <- set_caption(ft, "Distribuição de Frequências do Grau de instrução")
+ft
+
+```
+
+\noindent Observe que esta tabela gerada pela função `flextable()` atende às normas da ABNT.
+
+
+
+
+
+# Equações
+
+## Equações utilizando o símbolo "$"
+Pode-se adicionar equações no R Markdown utilizando linguagem \LaTeX. Equações devem ser escritas entre o símbolo $. Por exemplo, a sintaxe: `` $P(X=x) = {n \choose x} p^x (1-p)^{n-x}$ `` resulta em: $P(X=x) = {n \choose x} p^x (1-p)^{n-x}$.
+
+\noindent Podemos escrever uma equação em destaque, centralizada em uma linha, utilizando cifrões duplos \$$. Por exemplo, a sintaxe:
+
+`` $$P(X=x) = {n \choose x} p^x (1-p)^{n-x}$$ ``
+
+\noindent resulta em:
+
+$$P(X=x) = {n \choose x} p^x (1-p)^{n-x}$$.
+
+## Equações utilizando a sintaxe `\begin{equation}...\end{equation}`
+
+Outra forma de se criar uma equação é utilizando a expressão do \LaTeX:
+
+````
+\begin{equation}
+P(X=x) = {n \choose x} p^x (1-p)^{n-x}
+\end{equation}
+````
+
+\noindent cuja saída é uma equação centralizada e numerada:
+
+\begin{equation}
+P(X=x) = {n \choose x} p^x (1-p)^{n-x}
+\end{equation}
+
+## Mais exemplos de escrita matemática em \LaTeX
+
+### Frações
+A sintaxe `` $$\frac{a}{b}$$ ``, resulta em:
+$$\frac{a}{b}$$
+
+### Matrizes
+
+\noindent \textbf{Exemplo 1:} A sintaxe:
+````
+$$\begin{array}{ccc}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{array}$$
+````
+
+\noindent resulta em:
+
+
+$$\begin{array}{ccc}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{array}$$
+
+\noindent \textbf{Exemplo 2:} A sintaxe:
+
+````
+$$\begin{bmatrix}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{bmatrix}$$
+````
+
+\noindent resulta em:
+
+$$\begin{bmatrix}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{bmatrix}$$
+
+\noindent \textbf{Exemplo 3:} A sintaxe:
+
+````
+$$\begin{pmatrix}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{pmatrix}$$
+````
+
+\noindent resulta em:
+
+$$\begin{pmatrix}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} 
+\end{pmatrix}$$
+
+### Fórmulas
+
+A sintaxe:
+
+````
+$$f(x)=\frac{1}{\sqrt{2 \pi \sigma^2}} \exp^{-\frac{1}{2}\frac{(x-\mu)}{\sigma^2}}$$
+````
+
+\noindent resulta em:
+
+$$f(x)=\frac{1}{\sqrt{2 \pi \sigma^2}} \exp^{- \frac{1}{2}\frac{(x-\mu)}{\sigma^2}}$$
+
+
+# Referências cruzadas {#src}
+
+Para utilizar referências cruzadas, principalmente para poder referenciar tabelas no texto, devemos utilizar o `bookdown`. Para isso iremos ajustar o cabecalho YAML da seguinte forma:
+
+\vspace{0.2cm}
+\mybox
+````
+---
+title: "Aula de R Markdown"
+author: "Prof. Diógenes Ferreira Filho"
+date: "30/05/2023"
+output: 
+  bookdown::pdf_document2:
+    number_sections: yes
+    toc: no #Impede que seja gerado o sumário
+#toc-title: "Sumário"
+---
+````
+\endmybox
+\vspace{0.2cm}
+
+Observe que se você quiser gerar um sumário você deve deletar a linha da opção `toc: no` e apagar a serquilha (`#`) antes de `#toc-title: "Sumário"`.
+
+Para referenciar figuras e tabelas e na legenda aparecer **Figura 1** ao invés de **Figure 1** e **Tabela 1** ao invés de **Table 1** devemos acrescentar os comandos logo depois do cabeçalho YAML:
+
+\vspace{0.2cm}
+\mybox
+````
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabela}
+````
+\endmybox
+
+## Referenciando seções
+
+Para criar uma seção que possa receber uma referência cruzada vamos usar a seguinte sintaxe: "` ### subseção teste {#st} `", em que `{#st}` é um rótulo (poderia ter outro nome no lugar de `st`) que será utilizado para referenciar esta seção no texto. Então, escrevendo no texto:
+
+\mybox
+````
+### subseção teste {#st}
+````
+\endmybox
+
+\noindent a seção será criada:
+
+\mybox
+### Subseção teste {#st}
+\endmybox
+
+Para referenciar esta subseção vamos utilizar a seguinte sintaxe: `` subseção \@ref(st) ``, que resulta em: \myboxline{subseção \ref{st}}$~$.
+
+\vspace{0.5cm}
+
+## Referenciando figuras
+
+No *chunk* do R colocaremos o nome da figura depois de "`{r` ", nete caso utilizamos o nome `figteste`:
+
+````{verbatim}
+```{r figteste, echo=FALSE, fig.cap="Teste", fig.height=3, fig.width=3}
+plot(x=1)
+```
+````
+
+```{r figteste, echo=FALSE, fig.cap="Teste", fig.height=3, fig.width=3}
+plot(x=1)
+```
+
+\vspace{-0.2cm}
+Para referenciar a figura utilizamos a sintaxe `` Figura \@ref(fig:figteste) `` que resulta em: \myboxline{Figura \ref{fig:figteste}}$~$.
+
+
+## Referenciando tabelas
+
+Para referenciar uma tabela gerada pelo R colocaremos um nome para o *chunk*, neste caso utilizamos o nome `tabFreq` depois de "`{r`".
+
+````{verbatim}
+```{r tabFreq, echo = FALSE, message = FALSE, warning = FALSE}
+
+código R para gerar a tabela
+
+```
+````
+
+
+```{r tabFreq, echo = FALSE, message = FALSE, warning = FALSE}
+# Entrando com os dados no R:
+dados <- c("Fundamental","Médio","Médio","Superior","Médio","Médio",
+          "Médio","Médio","Fundamental","Fundamental","Superior","Fundamental",
+          "Superior","Fundamental","Médio","Médio","Médio","Médio",
+          "Fundamental","Médio","Superior","Fundamental","Superior","Médio",
+          "Médio","Fundamental","Médio","Médio","Médio","Fundamental",
+          "Fundamental","Fundamental","Superior","Fundamental","Médio","Médio")
+
+# Gerando a distribuição de frequências
+tab <- table(dados)
+
+# Criando uma tabela com duas colunas: "Grau de instrução" e "Frequência"
+tabela <- cbind("Grau de instrução"=names(tab),"Frequência"=as.numeric(tab))
+tabela <- data.frame(tabela)
+
+
+# Carregando o pacote flextable
+library(flextable)
+
+# Gerando a tabela formatada com flextable()
+ft <- flextable(tabela)
+
+# Ajustando a largura das colunas ao conteúdo
+ft <- autofit(ft) 
+
+#Ajustando os nomes das colunas
+ft <- set_header_labels(ft, Grau.de.instrução  = "Grau de instrução",
+                        Frequência = "Frequência")
+
+# Adicionando título na tabela
+ft <- set_caption(ft, "Distribuição de Frequências do Grau de instrução")
+ft
+
+```
+
+Para referenciar a Tabela no texto utilizamos a sintaxe `` Tabela \@ref(tab:tabFreq)`` que resulta em: \myboxline{Tabela \ref{tab:tabFreq}}$~$.
+
+
+## Referenciando equações
+
+Para criar uma equação que possa receber uma referência cruzada devemos criá-la dentro da expressão \LaTeX: `\begin{equation} ... \end{equation}` e, na frente da equação utilizar a sintaxe: `(\#eq:nome_da_equação)`. Para referenciá-la no texto devemos utilizar a sintaxe `\@ref(eq:nome_da_equação)`.
+
+A seguir podemos ver um exemplo de comandos do \LaTeX $~$ utilizados para gerar a equação da média amostral:
+
+````{verbatim}
+\begin{equation}
+\bar{X} = \frac{1}{n}\sum_{i=1}^n X_i (\#eq:media)
+\end{equation}
+````
+
+\noindent cujo resultado é:
+
+\begin{equation}
+\bar{X} = \frac{1}{n}\sum_{i=1}^n X_i (\#eq:media)
+\end{equation}
+
+\noindent Note que na margem direita da página, na frente da equação, aparece o número da equação. Para referenciar esta equação no texto utilizamos a sintaxe Equação `\@ref(eq:media)` cuja saída será \myboxline{Equação \ref{eq:media}}$~$.
+
+
+# Referências bibliográficas utilizando o BibTeX
+
+## Arquivo *Bibtex*
+
+*BibTeX* é um formato de arquivo tipo texto (porém com extensão *.bib*) para organização de listagens de bibliografia tais como: livros, teses, e artigos.
+
+A seguir é apresentada a estrutura do arquivo `references.bib` que contém as informações de referências bibliográficas de dois livros: "*ggplot2: Elegant Graphics for Data Analysis*" e "*R para Data Science*": 
+
+\vspace{0.3cm}
+\mybox
+````
+@Book{ggplot2,
+  author    = {Hadley Wickham},
+  title     = {ggplot2: Elegant Graphics for Data Analysis},
+  publisher = {Springer-Verlag},
+  address   = {New York:},
+  year      = {2016},
+  edition   = {2}
+}
+
+````
+\endmybox
+
+\mybox
+````
+@Book{r4ds,
+  author    = {Hadley Wickham and Garrett Grolemund},
+  title     = {R para Data Science},
+  address   = {Rio de Janeiro:},
+  publisher = {Alta Books},
+  year      = {2018},
+  edition   = {1}
+}
+````
+\endmybox
+
+
+\vspace{0.3cm}
+Como se tratam de livros então o tipo de entrada destas duas bibliografias é `@Book{}`. Observe que logo depois do "`@Book{`" cada bibliografia recebeu um rótulo: `ggplot2` e `r4ds`. Estes rótulos serão utilizados para referenciar estas bibliografias no texto.
+
+Note, ainda, que dentro da entrada `@Book{}` foram preenchidos alguns campos com informações destas bibliografias. Existem diversos campos que poderiam ser preenchidos, mas como se tratam de livros os principais campos são:
+
+* `author`: autor ou autores. Se houver mais de um autor os nomes dos autores devem ser separados por `and`, por exemplo: `Hadley Wickham` **\textcolor{red}{and}** `Garrett Grolemund`;
+* `title`: título da bibliografia;
+* `address`: cidade da editora (ou da revista quando se tratar de artigo);
+* `publisher`: editora (ou revista quando se tratar de artigo);
+* `year`: ano da publicação;
+* `edition`: edição;
+* `volume`: volume (quando houver mais de um volume do livro).
+
+O arquivo *.bib* deve conter todas as suas referências bibliográficas, cada uma logo abaixo da outra.
+
+Uma forma muito simples de se criar um arquivo bibtex (com extensão *.bib*) é abrir um documento do *Bloco de notas* do Windows, digitar (ou colar) as informações bibliográficas (como no exemplo acima), salvar o arquivo com extensão *.txt*, depois clicar com o botão direito do mouse sobre o arquivo, ir em `Propriedades` e alterar a extensão do arquivo de *.txt* para *.bib*. 
+
+\noindent \textbf{Observações:}
+
+* Para alterar a extensão de *.txt* para *.bib* deve estar habilitado no sistema operacional para tornar as extensões de nome de arquivo visíveis. Por exemplo, no Windows 10 faça o seguinte:
+
+  * Abra o Windows Explorer (pode ser qualquer pasta);
+  * Clique na guia Exibir;
+  * Marque a opção "Extensão de nomes de arquivos";
+  * As extensões de nome de arquivo agora estarão visíveis.
+
+* Existem editores gratuitos de \LaTeX $~$ como o *Texmaker* e o *TeXstudio*. Se você tiver algum destes editores instalados no computador você poderá facilmente criar ou editar arquivos com extensão *.bib*.
+
+No cabeçalho YAML você deverá inserir uma linha com o nome do arquivo do *Bibtex* contendo as bibliografias. Neste caso utilizamos o nome `references.bib`:
+
+\mybox
+````
+---
+title: "Relatórios dinâmicos com R Markdown"
+author: "Prof. Diógenes Ferreira Filho"
+date: "30/05/2023"
+output: 
+  bookdown::pdf_document2:
+    number_sections: yes
+bibliography: references.bib
+---
+````
+\endmybox
+
+## Ajuste automático das referências para as normas da ABNT
+
+Podemos utilizar um arquivo CSL (*Citation Style Language*) que contém instruções para o R Markdown sobre a formatação das citações e bibliografias. O CSL que estamos interessados é o que contém as instruções para formatação das citações e bibliogrfias de acordo com as normas da ABNT (Associação Brasileira de Normas Técnicas). 
+
+
+\mybox
+````
+---
+title: "Relatórios dinâmicos com R Markdown"
+author: "Prof. Diógenes Ferreira Filho"
+date: "30/05/2023"
+output: 
+  bookdown::pdf_document2:
+    number_sections: yes
+bibliography: references.bib
+csl: associacao-brasileira-de-normas-tecnicas.csl
+---
+````
+\endmybox
+
+Para fazer o download do arquivo CSL acesse o endereço:
+
+\noindent <https://github.com/citation-style-language/styles/blob/master/associacao-brasileira-de-normas-tecnicas.csl>.
+
+Depois clique com o botão direito do mouse em "*Raw*", em seguida clique em "*Salvar link como...*" e  salve o arquivo na mesma pasta onde você salvou o arquivo do R Markdown.
+
+\mybox
+```{r echo=FALSE,fig.align="center", out.width='95%'}
+knitr::include_graphics('C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/arquivocsl.png')
+```
+\endmybox
+
+\vspace{0.3cm}
+\noindent \textbf{Observação:} Sevocê não quiser fazer o download do arquivo CSL você pode digitar o endereço do link do arquivo CSL (versão *Raw*) no cabeçalho YAML:
+
+\mybox
+\begin{Verbatim}[breaklines=true, breakanywhere=true]
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/associacao-brasileira-de-normas-tecnicas.csl
+\end{Verbatim}
+\endmybox
+
+ 
+
+
+## Citando uma referência bibliográfica
+
+Para citar uma referência bibliográfica no R Markdown, utilizando o *Bibtex*, obedecendo as normas da ABNT, você pode utilizar a sintaxe `[@rotulo_da_referencia]` ou  a sintaxe "`Nomes dos autores [-@rotulo_da_referencia]`" (com o sinal de menos antes do arroba). 
+
+\noindent \textbf{Exemplos:}
+
+* A sintaxe `[@r4ds]` gera a saída: [@r4ds];
+* A sintaxe `[@ggplot2]` gera a saída: [@ggplot2];
+* A sintaxe `Wickham e Grolemund [-@r4ds]` gera a saída: Wickham e Grolemund  [-@r4ds];
+* A sintaxe `Wickham [-@ggplot2]` gera a saída: Wickham [-@ggplot2];
+
+Ao fazer as citações destas referências utilizando as sintaxes `[@rotulo_da_referencia]` ou `Nomes dos autores [-@rotulo_da_referencia]` as referências bibliográficas são adicionadas automaticamente no final do documento:
+\mybox
+![]("C:/Users/dffil/OneDrive/Área de Trabalho/Aula RMarkdown/Figuras/bibliografia.png"){width=95%}
+\endmybox
+
+\vspace{0.3cm}
+\noindent \textbf{Observações:} 
+
+* Existe a possibilidade de se utilizar a sintaxe `@ggplot2`, porém ela gera a seguinte saída: @ggplot2, com todas as letras maiúsculas. De acordo com as normas da ABNT esta citação deveria estar da seguinte forma: Wickham [-@ggplot2]; 
+* Uma forma simples de corrigir isto é utilizando a sintaxe "`Nomes dos autores [-@rotulo_da_referencia]`" (com o sinal de menos antes do arroba). Assim, por exemplo, `Wickham [-@ggplot2]` irá gerar a saída: Wickham [-@ggplot2], que atende as normas da ABNT;
+* Ao colocar o sinal de menos antes do arroba, `[-@ggplot2]`, é gerada uma referência cruzada contendo apenas o ano entre parêntese, sem os nomes dos autores: [-@ggplot2]. Então escrevemos manualmente os nomes dos autores, de acordo com as normas da ABNT, e inserir a referência cruzada `[-@ggplot2]` que irá gerar o ano entre parênteses e também irá gerar automaticamente a referência bibiográfica no final do documento.
+
+
+
+# Estruturas condicionais de textos
+
+Considere o seguinte conjunto de dados:
+
+\begin{center}
+```{r, echo=FALSE}
+set.seed(202305)
+dados <- round(rnorm(30,mean=5,sd=2),1)
+tab <- matrix(dados,nrow=3,ncol=10)
+tab <- kable(tab) 
+tab
+```
+\end{center}
+
+Vamos criar uma estrutura condicional que irá imprimir o **Texto A** se a média dos dados for maior ou igual a 5, **OU** imprimir o **Texto B** se a média dos dados for menor do que 5. Para isso usaremos a sintaxe:
+
+````{verbatim}
+```{r echo=FALSE, results='asis'}
+if(mean(dados)>=5){
+  cat("Aqui coloco o **Texto A** caso a média dos dados seja **maior** do que 5. 
+      Podemos usar marcação markdown aqui, por exemplo: **texto em negrito**. 
+      O valor da média é", round(mean(dados),2),".")
+} else{
+  cat("Aqui coloco o **Texto B** caso a média dos dados seja **menor** do que 5. 
+    Podemos usar marcação markdown aqui, por exemplo: **texto em negrito**. 
+      O valor da média é", round(mean(dados),2),".")
+}
+```
+````
+
+\noindent A saída dessa estrutura condicional será:
+
+```{r echo=FALSE, results='asis'}
+if(mean(dados)>=5){
+  cat("Aqui coloco o **Texto A** caso a média dos dados seja **maior** do que 5. Podemos usar marcação markdown aqui, por exemplo: **texto em negrito**. O valor da média é", round(mean(dados),2),".")
+} else{
+cat("Aqui coloco o **Texto B** caso a média dos dados seja **menor** do que 5. Podemos usar marcação markdown aqui, por exemplo: **texto em negrito**. O valor da média é", round(mean(dados),2),".")
+}
+```
+\
+
+\noindent \textbf{Observações:}
+
+* Utilizamos o argumento `results='asis'` dentro do *chunk* para que a saída do *chunk* fosse apresentada com formatação igual a do texto;
+* Utilizamos a função `cat()` para digitar os blocos de textos dentro dela;
+* Observe que dentro da função `cat()` tem textos e códigos do R, em que os textos ficam entre aspas e os códigos do R são escritos sem aspas e são separados dos textos por vírgulas.
+
+# Trabalho: Relatório dinâmico no R Markdown
+
+Foi feito um experimento para comparar dois métodos de treinamento para a execução de um serviço especializado dentro de uma empresa. Vinte funcionários foram selecionados para esse treinamento. Dez foram escolhidos ao acaso e treinados pelo método A e outros dez foram treinados pelo método B. Concluído o período de treinamento, todos os funcionários executaram o serviço e foi medido o tempo de cada um, em minutos. 
+
+* Considerando os dados apresentados na Tabela  \@ref(tab:tab1):
+
+\begin{center}
+```{r tab1, echo=FALSE}
+# Entrando com os dados no R
+A <- c(11, 20, 5, 23, 16, 21, 18, 16, 27, 24)
+B <- c(23, 46, 18, 19, 23, 17, 28, 36, 25, 28)
+
+tab1 <- rbind(A,B)
+library(kableExtra)
+kb1 <- kable(tab1, caption = "Tempos de execução (em min.) de funcionários treinados pelos métodos A e B")
+kable_styling(kb1,latex_options = "HOLD_position")
+```
+\end{center}
+
+\vspace{-1cm}
+
+\noindent Elabore um relatório no R Markdown (nomeie como "Relatório 1") contendo:
+
+1. A descrição do problema;
+
+2. O seguintes resultados da análise:
+
+    2.1. Um Boxplot do tempo de execução do serviço em função do método de treinamento (use o pacote `ggplot2`);
+    
+    2.2. Uma tabela contendo a média e o desvio padrão do tempo de execução do serviço para cada método (use o pacote `flextable`);
+    
+    2.3. Faça um teste t para comparar os tempos médios de execução do serviço pelos funcionários treinados pelos métodos A e B. Use a função do R: `t.test(A, B, alternative="two.sided", var.equal=TRUE)`.
+    
+3. Crie uma estrutura condicional para a conclusão do relatório:
+
+    * Se o valor-p do teste t for menor ou igual a 5% (teste significativo) e a média do **Método A** for **menor** que a do **Método B**, conclua: "Diante dos resultados obtidos, pode-se concluir que os funcionários treinados pelo método A obtiveram um desempenho superior aos funcionários treinados pelo método B, por terem realizado a execução do serviço mais rápido. Portanto é mais vantajoso para a empresa treinar seus funcionários pelo método A".
+    
+    * Se o valor-p do teste t for menor ou igual a 5% (teste significativo) e a média do **Método A** for **maior** que a do **Método B**, conclua: "Diante dos resultados obtidos, pode-se concluir que os funcionários treinados pelo método B obtiveram um desempenho superior aos funcionários treinados pelo método A, por terem realizado a execução do serviço mais rápido. Portanto é mais vantajoso para a empresa treinar seus funcionários pelo método B".
+    
+    * Se o valor-p do teste t for maior do que 5% (teste não significativo) então as médias dos métodos A e B não diferem dignificativamente entre si. Neste caso, conclua: "Diante dos resultados obtidos, pode-se concluir que ambos os métodos de treinamento proporcionam resultados equivalentes em relação ao tempo de execução do serviço. Desta forma, qualquer um dos métodos pode ser adotado pela empresa para treinamento de seus funcionários".
+
+4. Faça um novo relatório no R Markdown (nomeie como Relatório 2), considerando os itens 1 a 3, porém substituindo os dados utilizados anteriormente pelos dados da Tabela \@ref(tab:tab2).
+
+\begin{center}
+```{r tab2, echo=FALSE}
+# Entrando com os dados no R
+A <- c(21, 20, 15, 23, 9, 31, 18, 16, 37, 24)
+B <- c(23, 46, 18, 19, 23, 10, 28, 36, 25, 28)
+
+tab2 <- rbind(A,B)
+library(kableExtra)
+kb2 <- kable(tab2, caption = "Tempos de execução (em min.) de funcionários treinados pelos métodos A e B")
+kable_styling(kb2,latex_options = "HOLD_position")
+```
+\end{center}
+
+
+# BIBLIOGRAFIA

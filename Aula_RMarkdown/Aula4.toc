@@ -1,0 +1,55 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}Introdução}{5}{section.1}%
+\contentsline {section}{\numberline {2}Arquivos do R Markdown}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Arquivos simples e Templates}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Criando um novo documento do R Markdown}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Elementos do arquivo \emph {.rmd}}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Cabeçalho YAML}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Blocos de códigos (\emph {Chunks})}{7}{subsubsection.2.3.2}%
+\contentsline {paragraph}{\numberline {2.3.2.1}Argumentos do \emph {chunk}}{9}{paragraph.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.3}Códigos \emph {inline}}{9}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}Formatação de texto}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Formatações simples de texto em linguagem de marcação}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Formatações mais avançadas de texto utilizando linguagem \LaTeX }{11}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Alterar a cor do texto}{11}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Alterar a cor do fundo do texto}{11}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Texto sublinhado}{11}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Alterar o tamanho da fonte}{11}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Adicionar espaço em branco entre palavras}{12}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Adicionar espaço em branco entre linhas}{12}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}Quebra de página}{13}{subsubsection.3.2.7}%
+\contentsline {section}{\numberline {4}Seções e subseções}{13}{section.4}%
+\contentsline {section}{\numberline {5}Listas}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Listas não ordenadas}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Listas ordenadas}{15}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Hiperlinks}{16}{section.6}%
+\contentsline {section}{\numberline {7}Notas de rodapé}{16}{section.7}%
+\contentsline {section}{\numberline {8}Citações}{17}{section.8}%
+\contentsline {section}{\numberline {9}Imagens}{17}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Imagens externas}{17}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Inserindo imagens externas com um \emph {chunk}}{18}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Inserindo gráficos do R}{18}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Tabelas}{20}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Gerando tabelas simples no R Markdown}{20}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Tabelas usando linguagem \LaTeX }{20}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Tabelas do R formatadas}{21}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Equações}{24}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Equações utilizando o símbolo ``\$''}{24}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Equações utilizando a sintaxe \texttt {\textbackslash {}begin\{equation\}...\textbackslash {}end\{equation\}}}{24}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Mais exemplos de escrita matemática em \LaTeX }{24}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Frações}{24}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Matrizes}{25}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}Fórmulas}{26}{subsubsection.11.3.3}%
+\contentsline {section}{\numberline {12}Referências cruzadas}{26}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Referenciando seções}{27}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Subseção teste}{27}{subsubsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.2}Referenciando figuras}{27}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Referenciando tabelas}{28}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Referenciando equações}{28}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Referências bibliográficas utilizando o BibTeX}{29}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Arquivo \emph {Bibtex}}{29}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Ajuste automático das referências para as normas da ABNT}{31}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Citando uma referência bibliográfica}{32}{subsection.13.3}%
+\contentsline {section}{\numberline {14}Estruturas condicionais de textos}{33}{section.14}%
+\contentsline {section}{\numberline {15}Trabalho: Relatório dinâmico no R Markdown}{34}{section.15}%
+\contentsline {section}{BIBLIOGRAFIA}{36}{section*.2}%

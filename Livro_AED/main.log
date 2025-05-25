@@ -1,0 +1,3827 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.30)  12 FEB 2021 14:43
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03>
+("C:\Program Files\MiKTeX\tex/latex/base\book.cls"
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\fleqn.clo"
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip47
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+("C:\Program Files\MiKTeX\tex/latex/base\bk11.clo"
+File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen138
+) (structure.tex
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty"
+("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-12-07 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count186
+\l__pdf_internal_box=\box47
+))
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"))
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+("C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen141
+\pgfutil@tempdimb=\dimen142
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex"))
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def"
+\pgfutil@abb=\box48
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex")
+Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
+))
+Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen143
+\pgf@y=\dimen144
+\pgf@xa=\dimen145
+\pgf@ya=\dimen146
+\pgf@xb=\dimen147
+\pgf@yb=\dimen148
+\pgf@xc=\dimen149
+\pgf@yc=\dimen150
+\pgf@xd=\dimen151
+\pgf@yd=\dimen152
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count187
+\c@pgf@countb=\count188
+\c@pgf@countc=\count189
+\c@pgf@countd=\count190
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+\pgf@sys@id@count=\count191
+("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg"
+File: pgf.cfg 2020/12/01 v3.1.7a (3.1.7a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2020/12/01 v3.1.7a (3.1.7a)
+))) ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfsyssoftpath@smallbuffer@items=\count192
+\pgfsyssoftpath@bigbuffer@items=\count193
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+"
+File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)) ("C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count194
+\pgfmath@box=\box49
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex"
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.c
+ode.tex")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex
+")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code
+.tex")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex
+")
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmet
+ics.code.tex")))
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count195
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex")
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@picminx=\dimen154
+\pgf@picmaxx=\dimen155
+\pgf@picminy=\dimen156
+\pgf@picmaxy=\dimen157
+\pgf@pathminx=\dimen158
+\pgf@pathmaxx=\dimen159
+\pgf@pathminy=\dimen160
+\pgf@pathmaxy=\dimen161
+\pgf@xx=\dimen162
+\pgf@xy=\dimen163
+\pgf@yx=\dimen164
+\pgf@yy=\dimen165
+\pgf@zx=\dimen166
+\pgf@zy=\dimen167
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.
+tex"
+File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@path@lastx=\dimen168
+\pgf@path@lasty=\dimen169
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@shorten@end@additional=\dimen170
+\pgf@shorten@start@additional=\dimen171
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfpic=\box50
+\pgf@hbox=\box51
+\pgf@layerbox@main=\box52
+\pgf@picture@serial@count=\count196
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.t
+ex"
+File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgflinewidth=\dimen172
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.cod
+e.tex"
+File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@pt@x=\dimen173
+\pgf@pt@y=\dimen174
+\pgf@pt@temp=\dimen175
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code
+.tex"
+File: pgfcorepathprocessing.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfarrowsep=\dimen176
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@max=\dimen177
+\pgf@sys@shading@range@num=\count197
+\pgf@shadingcount=\count198
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfexternal@startupbox=\box53
+)) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.t
+ex"
+File: pgfcoretransparency.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)))
+("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfnodeparttextbox=\box54
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@nodesepstart=\dimen178
+\pgf@nodesepend=\dimen179
+) ("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.st
+y"
+Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
+)) ("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty"
+("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty"
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex"
+Package: pgffor 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex")
+\pgffor@iter=\dimen180
+\pgffor@skip=\dimen181
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
+Package: tikz 2020/12/01 v3.1.7a (3.1.7a)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code
+.tex"
+File: pgflibraryplothandlers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@plot@mark@count=\count199
+\pgfplotmarksize=\dimen182
+)
+\tikz@lastx=\dimen183
+\tikz@lasty=\dimen184
+\tikz@lastxsaved=\dimen185
+\tikz@lastysaved=\dimen186
+\tikz@lastmovetox=\dimen187
+\tikz@lastmovetoy=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
+\tikz@figbox=\box55
+\tikz@figbox@bg=\box56
+\tikz@tempbox=\box57
+\tikz@tempbox@bg=\box58
+\tikztreelevel=\count266
+\tikznumberofchildren=\count267
+\tikznumberofcurrentchild=\count268
+\tikz@fig@count=\count269
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfmatrixcurrentrow=\count270
+\pgfmatrixcurrentcolumn=\count271
+\pgf@matrix@numberofcolumns=\count272
+)
+\tikz@expandcount=\count273
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))) ("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/10/27 3.51 The Babel package
+
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/10/27 3.51 Babel common definitions
+\babel@savecnt=\count274
+\U@D=\dimen191
+\l@babelnohyphens=\language79
+
+("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read3
+)
+\bbl@dirlevel=\count275
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
+))
+("C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip50
+\enit@outerparindent=\dimen192
+\enit@toks=\toks28
+\enit@inbox=\box59
+\enit@count@id=\count276
+\enitdp@description=\count277
+)
+("C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty"
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen193
+\lightrulewidth=\dimen194
+\cmidrulewidth=\dimen195
+\belowrulesep=\dimen196
+\belowbottomsep=\dimen197
+\aboverulesep=\dimen198
+\abovetopsep=\dimen199
+\cmidrulesep=\dimen256
+\cmidrulekern=\dimen257
+\defaultaddspace=\dimen258
+\@cmidla=\count278
+\@cmidlb=\count279
+\@aboverulesep=\dimen259
+\@belowrulesep=\dimen260
+\@thisruleclass=\count280
+\@lastruleclass=\count281
+\@thisrulewidth=\dimen261
+)
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen262
+\Gm@wd@mp=\dimen263
+\Gm@odd@mp=\dimen264
+\Gm@even@mp=\dimen265
+\Gm@layoutwidth=\dimen266
+\Gm@layoutheight=\dimen267
+\Gm@layouthoffset=\dimen268
+\Gm@layoutvoffset=\dimen269
+\Gm@dimlist=\toks29
+
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX\tex/latex/psnfss\avant.sty"
+Package: avant 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+("C:\Program Files\MiKTeX\tex/latex/psnfss\mathptmx.sty"
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.sty"
+Package: microtype 2020/12/07 v2.8 Micro-typographical refinements (RS)
+\MT@toks=\toks30
+\MT@count=\count285
+LaTeX Info: Redefining \textls on input line 788.
+\MT@outer@kern=\dimen270
+LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
+\MT@listname@count=\count286
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype-pdftex.def"
+File: microtype-pdftex.def 2020/12/07 v2.8 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip51
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.cfg"
+File: microtype.cfg 2020/12/07 v2.8 microtype main configuration file (RS)
+))
+("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
+)
+("C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+2.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\t1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+
+("C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+)
+("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count288
+
+("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count289
+\c@listtotal=\count290
+\c@listcount=\count291
+\c@liststart=\count292
+\c@liststop=\count293
+\c@citecount=\count294
+\c@citetotal=\count295
+\c@multicitecount=\count296
+\c@multicitetotal=\count297
+\c@instcount=\count298
+\c@maxnames=\count299
+\c@minnames=\count300
+\c@maxitems=\count301
+\c@minitems=\count302
+\c@citecounter=\count303
+\c@maxcitecounter=\count304
+\c@savedcitecounter=\count305
+\c@uniquelist=\count306
+\c@uniquename=\count307
+\c@refsection=\count308
+\c@refsegment=\count309
+\c@maxextratitle=\count310
+\c@maxextratitleyear=\count311
+\c@maxextraname=\count312
+\c@maxextradate=\count313
+\c@maxextraalpha=\count314
+\c@abbrvpenalty=\count315
+\c@highnamepenalty=\count316
+\c@lownamepenalty=\count317
+\c@maxparens=\count318
+\c@parenlevel=\count319
+\blx@tempcnta=\count320
+\blx@tempcntb=\count321
+\blx@tempcntc=\count322
+\blx@maxsection=\count323
+\blx@maxsegment@0=\count324
+\blx@notetype=\count325
+\blx@parenlevel@text=\count326
+\blx@parenlevel@foot=\count327
+\blx@sectionciteorder@0=\count328
+\blx@entrysetcounter=\count329
+\blx@biblioinstance=\count330
+\labelnumberwidth=\skip52
+\labelalphawidth=\skip53
+\biblabelsep=\skip54
+\bibitemsep=\skip55
+\bibnamesep=\skip56
+\bibinitsep=\skip57
+\bibparsep=\skip58
+\bibhang=\skip59
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language80
+\c@mincomprange=\count331
+\c@maxcomprange=\count332
+\c@mincompwidth=\count333
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count334
+\c@savedafterword=\count335
+\c@annotator=\count336
+\c@savedannotator=\count337
+\c@author=\count338
+\c@savedauthor=\count339
+\c@bookauthor=\count340
+\c@savedbookauthor=\count341
+\c@commentator=\count342
+\c@savedcommentator=\count343
+\c@editor=\count344
+\c@savededitor=\count345
+\c@editora=\count346
+\c@savededitora=\count347
+\c@editorb=\count348
+\c@savededitorb=\count349
+\c@editorc=\count350
+\c@savededitorc=\count351
+\c@foreword=\count352
+\c@savedforeword=\count353
+\c@holder=\count354
+\c@savedholder=\count355
+\c@introduction=\count356
+\c@savedintroduction=\count357
+\c@namea=\count358
+\c@savednamea=\count359
+\c@nameb=\count360
+\c@savednameb=\count361
+\c@namec=\count362
+\c@savednamec=\count363
+\c@translator=\count364
+\c@savedtranslator=\count365
+\c@shortauthor=\count366
+\c@savedshortauthor=\count367
+\c@shorteditor=\count368
+\c@savedshorteditor=\count369
+\c@labelname=\count370
+\c@savedlabelname=\count371
+\c@institution=\count372
+\c@savedinstitution=\count373
+\c@lista=\count374
+\c@savedlista=\count375
+\c@listb=\count376
+\c@savedlistb=\count377
+\c@listc=\count378
+\c@savedlistc=\count379
+\c@listd=\count380
+\c@savedlistd=\count381
+\c@liste=\count382
+\c@savedliste=\count383
+\c@listf=\count384
+\c@savedlistf=\count385
+\c@location=\count386
+\c@savedlocation=\count387
+\c@organization=\count388
+\c@savedorganization=\count389
+\c@origlocation=\count390
+\c@savedoriglocation=\count391
+\c@origpublisher=\count392
+\c@savedorigpublisher=\count393
+\c@publisher=\count394
+\c@savedpublisher=\count395
+\c@language=\count396
+\c@savedlanguage=\count397
+\c@origlanguage=\count398
+\c@savedoriglanguage=\count399
+\c@pageref=\count400
+\c@savedpageref=\count401
+\shorthandwidth=\skip60
+\shortjournalwidth=\skip61
+\shortserieswidth=\skip62
+\shorttitlewidth=\skip63
+\shortauthorwidth=\skip64
+\shorteditorwidth=\skip65
+\locallabelnumberwidth=\skip66
+\locallabelalphawidth=\skip67
+\localshorthandwidth=\skip68
+\localshortjournalwidth=\skip69
+\localshortserieswidth=\skip70
+\localshorttitlewidth=\skip71
+\localshortauthorwidth=\skip72
+\localshorteditorwidth=\skip73
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+)
+Package biblatex Info: expl3
+(biblatex)             2020-12-07 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.def"
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count402
+\c@textcitetotal=\count403
+\c@textcitemaxnames=\count404
+\c@biburlbigbreakpenalty=\count405
+\c@biburlbreakpenalty=\count406
+\c@biburlnumpenalty=\count407
+\c@biburlucpenalty=\count408
+\c@biburllcpenalty=\count409
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count410
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count411
+\c@bbx:relatedtotal=\count412
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx"
+File: numeric.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg"
+File: biblatex.cfg 
+)
+
+Package biblatex Warning: 'babel' option is deprecated.
+(biblatex)                Please use 'autolang' instead.
+
+) ("C:\Program Files\MiKTeX\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count413
+\calc@Bcount=\count414
+\calc@Adimen=\dimen271
+\calc@Bdimen=\dimen272
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count415
+\calc@Cskip=\skip76
+)
+("C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write5
+\openout5 = `main.idx'.
+
+
+Writing index file main.idx
+("C:\Program Files\MiKTeX\tex/latex/titlesec\titletoc.sty"
+Package: titletoc 2019/10/16 v2.13 TOC entries
+\ttl@leftsep=\dimen273
+)
+("C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip77
+\f@nch@O@elh=\skip78
+\f@nch@O@erh=\skip79
+\f@nch@O@olh=\skip80
+\f@nch@O@orh=\skip81
+\f@nch@O@elf=\skip82
+\f@nch@O@erf=\skip83
+\f@nch@O@olf=\skip84
+\f@nch@O@orf=\skip85
+)
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip86
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen274
+))
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen275
+)
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count416
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count417
+\leftroot@=\count418
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count419
+\DOTSCASE@=\count420
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+\big@size=\dimen276
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count421
+\c@MaxMatrixCols=\count422
+\dotsspace@=\muskip21
+\c@parentequation=\count423
+\dspbrk@lvl=\count424
+\tag@help=\toks34
+\row@=\count425
+\column@=\count426
+\maxfields@=\count427
+\andhelp@=\toks35
+\eqnshift@=\dimen277
+\alignsep@=\dimen278
+\tagshift@=\dimen279
+\tagwidth@=\dimen280
+\totwidth@=\dimen281
+\lineht@=\dimen282
+\@envbody=\toks36
+\multlinegap=\skip87
+\multlinetaggap=\skip88
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
+\thm@preskip=\skip89
+\thm@postskip=\skip90
+\thm@headsep=\skip91
+\dth@everypar=\toks43
+)
+\c@notation=\count428
+\c@dummy=\count429
+\c@problem=\count430
+\c@exerciseT=\count431
+\c@exampleT=\count432
+\c@vocabulary=\count433
+\c@definitionT=\count434
+
+("C:\Program Files\MiKTeX\tex/latex/mdframed\mdframed.sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+("C:\Program Files\MiKTeX\tex/latex/zref\zref-abspage.sty"
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+("C:\Program Files\MiKTeX\tex/latex/zref\zref-base.sty"
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+("C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty"
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\c@abspage=\count435
+Package zref Info: New property: abspage on input line 66.
+)
+("C:\Program Files\MiKTeX\tex/latex/needspace\needspace.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip92
+\c@mdf@globalstyle@cnt=\count436
+\mdf@skipabove@length=\skip93
+\mdf@skipbelow@length=\skip94
+\mdf@leftmargin@length=\skip95
+\mdf@rightmargin@length=\skip96
+\mdf@innerleftmargin@length=\skip97
+\mdf@innerrightmargin@length=\skip98
+\mdf@innertopmargin@length=\skip99
+\mdf@innerbottommargin@length=\skip100
+\mdf@splittopskip@length=\skip101
+\mdf@splitbottomskip@length=\skip102
+\mdf@outermargin@length=\skip103
+\mdf@innermargin@length=\skip104
+\mdf@linewidth@length=\skip105
+\mdf@innerlinewidth@length=\skip106
+\mdf@middlelinewidth@length=\skip107
+\mdf@outerlinewidth@length=\skip108
+\mdf@roundcorner@length=\skip109
+\mdf@footenotedistance@length=\skip110
+\mdf@userdefinedwidth@length=\skip111
+\mdf@needspace@length=\skip112
+\mdf@frametitleaboveskip@length=\skip113
+\mdf@frametitlebelowskip@length=\skip114
+\mdf@frametitlerulewidth@length=\skip115
+\mdf@frametitleleftmargin@length=\skip116
+\mdf@frametitlerightmargin@length=\skip117
+\mdf@shadowsize@length=\skip118
+\mdf@extratopheight@length=\skip119
+\mdf@subtitleabovelinewidth@length=\skip120
+\mdf@subtitlebelowlinewidth@length=\skip121
+\mdf@subtitleaboveskip@length=\skip122
+\mdf@subtitlebelowskip@length=\skip123
+\mdf@subtitleinneraboveskip@length=\skip124
+\mdf@subtitleinnerbelowskip@length=\skip125
+\mdf@subsubtitleabovelinewidth@length=\skip126
+\mdf@subsubtitlebelowlinewidth@length=\skip127
+\mdf@subsubtitleaboveskip@length=\skip128
+\mdf@subsubtitlebelowskip@length=\skip129
+\mdf@subsubtitleinneraboveskip@length=\skip130
+\mdf@subsubtitleinnerbelowskip@length=\skip131
+
+("C:\Program Files\MiKTeX\tex/latex/mdframed\md-frame-0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box62
+\mdf@footnotebox=\box63
+\mdf@splitbox@one=\box64
+\mdf@splitbox@two=\box65
+\mdf@splitbox@save=\box66
+\mdfsplitboxwidth=\skip132
+\mdfsplitboxtotalwidth=\skip133
+\mdfsplitboxheight=\skip134
+\mdfsplitboxdepth=\skip135
+\mdfsplitboxtotalheight=\skip136
+\mdfframetitleboxwidth=\skip137
+\mdfframetitleboxtotalwidth=\skip138
+\mdfframetitleboxheight=\skip139
+\mdfframetitleboxdepth=\skip140
+\mdfframetitleboxtotalheight=\skip141
+\mdffootnoteboxwidth=\skip142
+\mdffootnoteboxtotalwidth=\skip143
+\mdffootnoteboxheight=\skip144
+\mdffootnoteboxdepth=\skip145
+\mdffootnoteboxtotalheight=\skip146
+\mdftotallinewidth=\skip147
+\mdfboundingboxwidth=\skip148
+\mdfboundingboxtotalwidth=\skip149
+\mdfboundingboxheight=\skip150
+\mdfboundingboxdepth=\skip151
+\mdfboundingboxtotalheight=\skip152
+\mdf@freevspace@length=\skip153
+\mdf@horizontalwidthofbox@length=\skip154
+\mdf@verticalmarginwhole@length=\skip155
+\mdf@horizontalspaceofbox=\skip156
+\mdfsubtitleheight=\skip157
+\mdfsubsubtitleheight=\skip158
+\c@mdfcountframes=\count437
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count438
+\c@mdf@env@i=\count439
+\c@mdf@env@ii=\count440
+\c@mdf@zref@counter=\count441
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+\esp=\skip159
+\ecart=\skip160
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\@linkdim=\dimen283
+\Hy@linkcounter=\count442
+\Hy@pagecounter=\count443
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count444
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count445
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen284
+
+("C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count446
+\Field@Width=\dimen285
+\Fld@charsize=\dimen286
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+\Hy@abspage=\count447
+\c@Item=\count448
+\c@Hfootnote=\count449
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+("C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty"
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\HyAnn@Count=\count450
+\Fld@listcount=\count451
+\c@bookmark@seq@number=\count452
+
+("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip161
+)
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 509.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 509.
+
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 509.
+
+Package hyperref Info: Option `colorlinks' set `false' on input line 509.
+Package hyperref Info: Option `breaklinks' set `true' on input line 509.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 509.
+
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 509.
+("C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty"
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+("C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def"
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count453
+))
+("C:\Program Files\MiKTeX\tex/latex/listings\listings.sty"
+\lst@mode=\count454
+\lst@gtempboxa=\box67
+\lst@token=\toks44
+\lst@length=\count455
+\lst@currlwidth=\dimen287
+\lst@column=\count456
+\lst@pos=\count457
+\lst@lostspace=\dimen288
+\lst@width=\dimen289
+\lst@newlines=\count458
+\lst@lineno=\count459
+\lst@maxwidth=\dimen290
+
+("C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count460
+\lst@skipnumbers=\count461
+\lst@framebox=\box68
+)
+("C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Program Files\MiKTeX\tex/latex/listings\lstlang2.sty"
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+("C:\Program Files\MiKTeX\tex/latex/listings\lstlang3.sty"
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+("C:\Program Files\MiKTeX\tex/latex/ncctools\nccmath.sty"
+Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
+\NCC@fracrulewidth=\dimen291
+)
+("C:\Program Files\MiKTeX\tex/latex/tools\bm.sty"
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+LaTeX Info: Redefining \bm on input line 209.
+)
+("C:\Program Files\MiKTeX\tex/latex/psnfss\courier.sty"
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+("C:\Program Files\MiKTeX\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count462
+\float@exts=\toks45
+\float@box=\box69
+\@float@everytoks=\toks46
+\@floatcapt=\box70
+)
+("C:\Program Files\MiKTeX\tex/latex/caption\caption.sty"
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+("C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty"
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen292
+\captionmargin@=\dimen293
+\captionwidth=\dimen294
+\caption@tempdima=\dimen295
+\caption@indent=\dimen296
+\caption@parindent=\dimen297
+\caption@hangindent=\dimen298
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count463
+\c@continuedfloat=\count464
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+("C:\Program Files\MiKTeX\tex/latex/slashbox\slashbox.sty"
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box71
+\@slashboxb=\box72
+\@slashboxc=\box73
+\@slashboxwd=\count465
+\@slashboxht=\count466
+\@slashsepl=\dimen299
+\@slashsepr=\dimen300
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count467
+\@quotereset=\count468
+(main.aux
+
+LaTeX Warning: Label `dadosbrutossalarios' multiply defined.
+
+
+LaTeX Warning: Label `lst:Rmoda1' multiply defined.
+
+
+LaTeX Warning: Label `lst:Rvardadosagrupados' multiply defined.
+
+
+LaTeX Warning: Label `lst:Ranbidvarquanti2' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+ ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count469
+\scratchdimen=\dimen301
+\scratchbox=\box74
+\nofMPsegments=\count470
+\nofMParguments=\count471
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count472
+\MPscratchDim=\dimen302
+\MPnumerator=\count473
+\makeMPintoPDFobject=\count474
+\everyMPtoPDFconversion=\toks48
+) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-10.91173pt
+* \headheight=14.0pt
+* \headsep=10.0pt
+* \topskip=11.0pt
+* \footskip=39.83368pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 53.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 53.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-ptm.cfg"
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+Package hyperref Info: Link coloring OFF on input line 53.
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count475
+)
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
+\c@lstlisting=\count476
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<Pictures//background.pdf, id=6, 597.63278pt x 844.95674pt>
+File: Pictures//background.pdf Graphic file (type pdf)
+<use Pictures//background.pdf>
+Package pdftex.def Info: Pictures//background.pdf  used on input line 62.
+(pdftex.def)             Requested size: 597.50787pt x 844.78706pt.
+LaTeX Font Info:    Trying to load font information for T1+pag on input line 63
+.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\t1pag.fd"
+File: t1pag.fd 2001/06/04 font definitions for T1/pag.
+)
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 63.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pag' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 67.
+LaTeX Font Info:    Trying to load font information for TS1+pag on input line 6
+7.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ts1pag.fd"
+File: ts1pag.fd 2001/06/04 font definitions for TS1/pag.
+)
+LaTeX Font Info:    Font shape `TS1/pag/b/n' in size <20.74> not available
+(Font)              Font shape `TS1/pag/db/n' tried instead on input line 67.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pag' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 67.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 67.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 67.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 67.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
+7.
+
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
+
+{C:/Users/dffil/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Pictures//bac
+kground.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+4.
+("C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+[2]
+<Pictures//chapter_head_1.pdf, id=29, 845.07718pt x 455.30101pt>
+File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_1.pdf>
+Package pdftex.def Info: Pictures//chapter_head_1.pdf  used on input line 107.
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+ (main.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 6.
+ [3
+
+ <./Pictures//chapter_head_1.pdf>] [4]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 232.
+)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [5] [6
+
+]
+\c@ttl@toc@default=\count477
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <220> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 118.
+ (main.ptc)
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 118.
+
+[7
+
+] [8]
+Capítulo 1.
+<Pictures//chapter_head_2.pdf, id=354, 845.07718pt x 455.30101pt>
+File: Pictures//chapter_head_2.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_2.pdf>
+Package pdftex.def Info: Pictures//chapter_head_2.pdf  used on input line 126.
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
+2.
+("C:\Program Files\MiKTeX\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+<Pictures//Rdownload.png, id=364, 663.33536pt x 525.6782pt>
+File: Pictures//Rdownload.png Graphic file (type png)
+<use Pictures//Rdownload.png>
+Package pdftex.def Info: Pictures//Rdownload.png  used on input line 144.
+(pdftex.def)             Requested size: 427.85307pt x 339.06384pt.
+
+Overfull \hbox (1.06172pt too wide) in paragraph at lines 144--146
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9
+
+ <./Pictures//chapter_head_2.pdf>]
+<Pictures//Rinstal.png, id=384, 662.475pt x 745.06929pt>
+File: Pictures//Rinstal.png Graphic file (type png)
+<use Pictures//Rinstal.png>
+Package pdftex.def Info: Pictures//Rinstal.png  used on input line 155.
+(pdftex.def)             Requested size: 427.29816pt x 480.5717pt.
+
+Overfull \hbox (0.5068pt too wide) in paragraph at lines 155--157
+ [][] 
+ []
+
+<Pictures//Rlayout2.png, id=386, 649.13947pt x 359.19911pt>
+File: Pictures//Rlayout2.png Graphic file (type png)
+<use Pictures//Rlayout2.png>
+Package pdftex.def Info: Pictures//Rlayout2.png  used on input line 179.
+(pdftex.def)             Requested size: 428.43336pt x 237.07214pt.
+
+Overfull \hbox (1.64201pt too wide) in paragraph at lines 179--181
+ [][] 
+ []
+
+[10 <./Pictures//Rdownload.png>] [11 <./Pictures//Rinstal.png>] [12 <./Pictures
+//Rlayout2.png>]
+Capítulo 2.
+<Pictures//chapter_head_4.pdf, id=401, 845.1575pt x 455.30101pt>
+File: Pictures//chapter_head_4.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_4.pdf>
+Package pdftex.def Info: Pictures//chapter_head_4.pdf  used on input line 194.
+(pdftex.def)             Requested size: 597.50787pt x 321.89735pt.
+<Pictures//RSdownload.png, id=410, 657.31285pt x 688.7159pt>
+File: Pictures//RSdownload.png Graphic file (type png)
+<use Pictures//RSdownload.png>
+Package pdftex.def Info: Pictures//RSdownload.png  used on input line 214.
+(pdftex.def)             Requested size: 427.24829pt x 447.66003pt.
+<Pictures//RSinstal.png, id=414, 656.4525pt x 389.3116pt>
+File: Pictures//RSinstal.png Graphic file (type png)
+<use Pictures//RSinstal.png>
+Package pdftex.def Info: Pictures//RSinstal.png  used on input line 225.
+(pdftex.def)             Requested size: 426.68907pt x 253.04953pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+ <./Pictures//chapter_head_4.pdf>]
+<Pictures//RSlayout.png, id=432, 467.60411pt x 255.95625pt>
+File: Pictures//RSlayout.png Graphic file (type png)
+<use Pictures//RSlayout.png>
+Package pdftex.def Info: Pictures//RSlayout.png  used on input line 251.
+(pdftex.def)             Requested size: 430.19385pt x 235.47868pt.
+
+Overfull \hbox (3.4025pt too wide) in paragraph at lines 251--253
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./Pictures//RSdownload.png>] [15 <./Pictures//RSinstal.png> <./Pictures//R
+Slayout.png>] [16
+
+]
+Capítulo 3.
+File: Pictures//chapter_head_2.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_2.pdf>
+Package pdftex.def Info: Pictures//chapter_head_2.pdf  used on input line 264.
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+<Pictures//Rlayoutll.png, id=452, 467.17393pt x 258.10715pt>
+File: Pictures//Rlayoutll.png Graphic file (type png)
+<use Pictures//Rlayoutll.png>
+Package pdftex.def Info: Pictures//Rlayoutll.png  used on input line 287.
+(pdftex.def)             Requested size: 431.20242pt x 238.23337pt.
+
+Overfull \hbox (4.41107pt too wide) in paragraph at lines 287--289
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 307.
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+[18 <./Pictures//Rlayoutll.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 529.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--726
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--787
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
+
+ []
+
+
+Overfull \hbox (17.25813pt too wide) in paragraph at lines 821--822
+[]\T1/pcr/b/n/10.95 fun��o("local do arquivo/nome do arquivo", argumentos do co
+mando) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--836
+
+ []
+
+[27] [28] (main.ptc) [29
+
+] [30]
+Capítulo 4.
+<Pictures//chapter_head_3.pdf, id=940, 845.07718pt x 455.30101pt>
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 917.
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+<Pictures//tipovariaveis.jpg, id=942, 310.15875pt x 208.20644pt>
+File: Pictures//tipovariaveis.jpg Graphic file (type jpg)
+<use Pictures//tipovariaveis.jpg>
+Package pdftex.def Info: Pictures//tipovariaveis.jpg  used on input line 925.
+(pdftex.def)             Requested size: 284.52756pt x 190.99944pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 934--935
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--942
+
+ []
+
+[31
+
+ <./Pictures//chapter_head_3.pdf> <./Pictures//tipovariaveis.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 943--948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--954
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--960
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--966
+
+ []
+
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 969.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 969.
+[32]
+Capítulo 5.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 993.
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--999
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1032.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1032.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1041.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1041.
+[33
+
+]
+Package mdframed Info: Not enough space on this page on input line 1047.
+Package mdframed Info: mdframed works in twoside mode on input line 1052.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1052.
+Package mdframed Info: mdframed works in twoside mode on input line 1067.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1067.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1079
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1083.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1083.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1100.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1118
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1243
+
+ []
+
+
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1253--1254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1315
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1346
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1448--1450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1467--1468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1477--1478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1493--1494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1500
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1571--1573
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1604
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1623
+
+ []
+
+[42]
+Capítulo 6.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 1647.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1667--1668
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1679.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1679.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1693.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1693.
+[43
+
+]
+<Pictures//grafcol.pdf, id=1164, 361.35pt x 361.35pt>
+File: Pictures//grafcol.pdf Graphic file (type pdf)
+<use Pictures//grafcol.pdf>
+Package pdftex.def Info: Pictures//grafcol.pdf  used on input line 1700.
+(pdftex.def)             Requested size: 289.0804pt x 254.93704pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1710--1711
+
+ []
+
+[44 <./Pictures//grafcol.pdf>]
+Overfull \hbox (14.99838pt too wide) in paragraph at lines 1750--1751
+[]\T1/ptm/m/n/10.95 (-20) o ar-gu-mento \T1/pcr/m/n/10.95 ylim \T1/ptm/m/n/10.9
+5 (-20) es-peci-fica os lim-ites do eixo \T1/ptm/m/it/10.95 (-20) y \T1/ptm/m/n
+/10.95 (-20) (eixo das or-de-nadas). As-sim, \T1/pcr/m/n/10.95 ylim=c(0,20)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1762
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1777
+
+ []
+
+<Pictures//grafbar.pdf, id=1206, 361.35pt x 361.35pt>
+File: Pictures//grafbar.pdf Graphic file (type pdf)
+<use Pictures//grafbar.pdf>
+Package pdftex.def Info: Pictures//grafbar.pdf  used on input line 1786.
+(pdftex.def)             Requested size: 289.0804pt x 254.93704pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1798
+
+ []
+
+[45 <./Pictures//grafbar.pdf>]
+Overfull \hbox (10.83435pt too wide) in paragraph at lines 1837--1838
+[]\T1/ptm/m/n/10.95 (-20) o ar-gu-mento \T1/pcr/m/n/10.95 xlim \T1/ptm/m/n/10.9
+5 (-20) es-peci-fica os lim-ites do eixo \T1/ptm/m/it/10.95 (-20) x \T1/ptm/m/n
+/10.95 (-20) (eixo das ab-scis-sas). As-sim, \T1/pcr/m/n/10.95 xlim=c(0,20)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 1876.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1876.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1884.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1884.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures//grafset2d.pdf, id=1233, 361.35pt x 361.35pt>
+File: Pictures//grafset2d.pdf Graphic file (type pdf)
+<use Pictures//grafset2d.pdf>
+Package pdftex.def Info: Pictures//grafset2d.pdf  used on input line 1890.
+(pdftex.def)             Requested size: 289.0804pt x 198.03148pt.
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1896--1897
+
+ []
+
+<Pictures//grafset3d.pdf, id=1270, 361.35pt x 361.35pt>
+File: Pictures//grafset3d.pdf Graphic file (type pdf)
+<use Pictures//grafset3d.pdf>
+Package pdftex.def Info: Pictures//grafset3d.pdf  used on input line 1903.
+(pdftex.def)             Requested size: 289.0804pt x 129.74477pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1915--1916
+
+ []
+
+[47 <./Pictures//grafset2d.pdf> <./Pictures//grafset3d.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1982
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1982
+
+ []
+
+[48]
+Package mdframed Info: mdframed works in twoside mode on input line 1992.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1992.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2010.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2010.
+<Pictures//graflinhas.pdf, id=1337, 361.35pt x 361.35pt>
+File: Pictures//graflinhas.pdf Graphic file (type pdf)
+<use Pictures//graflinhas.pdf>
+Package pdftex.def Info: Pictures//graflinhas.pdf  used on input line 2016.
+(pdftex.def)             Requested size: 289.0804pt x 243.55592pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2029
+
+ []
+
+[49 <./Pictures//graflinhas.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2091--2092
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 2095.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2095.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2111.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2111.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2114--2115
+
+ []
+
+<Pictures//grafhist.pdf, id=1362, 361.35pt x 361.35pt>
+File: Pictures//grafhist.pdf Graphic file (type pdf)
+<use Pictures//grafhist.pdf>
+Package pdftex.def Info: Pictures//grafhist.pdf  used on input line 2117.
+(pdftex.def)             Requested size: 289.0804pt x 236.72719pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2129
+
+ []
+
+
+Underfull \vbox (badness 3601) has occurred while \output is active []
+
+ [51 <./Pictures//grafhist.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
+
+ []
+
+<Pictures//grafpolifreq.pdf, id=1421, 361.35pt x 361.35pt>
+File: Pictures//grafpolifreq.pdf Graphic file (type pdf)
+<use Pictures//grafpolifreq.pdf>
+Package pdftex.def Info: Pictures//grafpolifreq.pdf  used on input line 2204.
+(pdftex.def)             Requested size: 289.0804pt x 243.55592pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2231--2232
+
+ []
+
+<Pictures//grafpolifreq3.png, id=1425, 790.152pt x 345.6915pt>
+File: Pictures//grafpolifreq3.png Graphic file (type png)
+<use Pictures//grafpolifreq3.png>
+Package pdftex.def Info: Pictures//grafpolifreq3.png  used on input line 2235.
+(pdftex.def)             Requested size: 426.67572pt x 186.67062pt.
+[52 <./Pictures//grafpolifreq.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2245--2246
+
+ []
+
+[53 <./Pictures//grafpolifreq3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2292--2293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2297--2298
+
+ []
+
+<Pictures//grafhistpoli.pdf, id=1471, 361.35pt x 361.35pt>
+File: Pictures//grafhistpoli.pdf Graphic file (type pdf)
+<use Pictures//grafhistpoli.pdf>
+Package pdftex.def Info: Pictures//grafhistpoli.pdf  used on input line 2300.
+(pdftex.def)             Requested size: 289.0804pt x 243.55592pt.
+[54 <./Pictures//grafhistpoli.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2343--2344
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2426--2427
+
+ []
+
+[55]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2529--2530
+
+ []
+
+
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [56]
+Underfull \hbox (badness 10000) in paragraph at lines 2552--2553
+
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 2577--2578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2584--2585
+
+ []
+
+<Pictures//grafseriestemp.pdf, id=1558, 361.35pt x 361.35pt>
+File: Pictures//grafseriestemp.pdf Graphic file (type pdf)
+<use Pictures//grafseriestemp.pdf>
+Package pdftex.def Info: Pictures//grafseriestemp.pdf  used on input line 2611.
+
+(pdftex.def)             Requested size: 289.0804pt x 243.55592pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2621--2622
+
+ []
+
+[58] [59 <./Pictures//grafseriestemp.pdf>] [60
+
+]
+Capítulo 7.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 2673.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2686--2688
+
+ []
+
+[61]
+Package mdframed Info: mdframed works in twoside mode on input line 2711.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2711.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2717--2718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2722--2723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2741--2742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2759--2760
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2764--2765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2766--2768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2766--2768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2769--2770
+
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 2797--2798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2801--2802
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2804--2805
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 2807.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2807.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2814--2815
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2816--2821
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2816--2821
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2829--2830
+
+ []
+
+[63]
+Package mdframed Info: mdframed works in twoside mode on input line 2875.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2875.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2883--2884
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2901--2902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2912--2913
+
+ []
+
+[64]
+Package mdframed Info: mdframed works in twoside mode on input line 2958.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2958.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2966--2967
+
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 3004--3005
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3071--3072
+
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 3073--3074
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 3100.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3113--3114
+
+ []
+
+[67]
+<Pictures//medpos_mediana.png, id=1754, 508.90125pt x 118.041pt>
+File: Pictures//medpos_mediana.png Graphic file (type png)
+<use Pictures//medpos_mediana.png>
+Package pdftex.def Info: Pictures//medpos_mediana.png  used on input line 3128.
+
+(pdftex.def)             Requested size: 330.78189pt x 76.72572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3141--3142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3165--3166
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 3197.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3197.
+[68 <./Pictures//medpos_mediana.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3253--3254
+
+ []
+
+
+Package mathptmx Warning: There are no bold math fonts on input line 3289.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 3340--3341
+
+ []
+
+[70]
+Package mdframed Info: mdframed works in twoside mode on input line 3365.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3365.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3417--3418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3419--3420
+
+ []
+
+<Pictures//medpos_mediana2.png, id=1809, 507.0945pt x 246.32025pt>
+File: Pictures//medpos_mediana2.png Graphic file (type png)
+<use Pictures//medpos_mediana2.png>
+Package pdftex.def Info: Pictures//medpos_mediana2.png  used on input line 3422
+.
+(pdftex.def)             Requested size: 329.60751pt x 160.10626pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3435--3436
+
+ []
+
+
+Underfull \vbox (badness 3281) has occurred while \output is active []
+
+ [71]
+Underfull \hbox (badness 10000) in paragraph at lines 3482--3483
+
+ []
+
+[72 <./Pictures//medpos_mediana2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3502--3503
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3516--3517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3534--3535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3557--3558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3562--3563
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3597--3598
+
+ []
+
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3618
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3619--3620
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 3623.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3623.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3644--3645
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3671--3672
+
+ []
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 3681--3682
+
+ []
+
+<Pictures//medpos_moda1.png, id=1869, 342.68025pt x 241.50224pt>
+File: Pictures//medpos_moda1.png Graphic file (type png)
+<use Pictures//medpos_moda1.png>
+Package pdftex.def Info: Pictures//medpos_moda1.png  used on input line 3687.
+(pdftex.def)             Requested size: 222.73952pt x 156.97458pt.
+[75 <./Pictures//medpos_moda1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3713--3714
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3764--3765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3769--3770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3776--3777
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3782--3783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3790--3791
+
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 3794--3795
+
+ []
+
+<Pictures//medpos_quartis.png, id=1890, 619.113pt x 138.5175pt>
+File: Pictures//medpos_quartis.png Graphic file (type png)
+<use Pictures//medpos_quartis.png>
+Package pdftex.def Info: Pictures//medpos_quartis.png  used on input line 3818.
+
+(pdftex.def)             Requested size: 328.12833pt x 73.41391pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3828--3829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3866--3867
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3868--3869
+
+ []
+
+[77 <./Pictures//medpos_quartis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3872--3873
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3875--3876
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3887--3888
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3899--3900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3916--3917
+
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 3967--3968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3969--3970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3973--3974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3976--3977
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3988--3989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4000--4001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4010--4011
+
+ []
+
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4034
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4046--4047
+
+ []
+
+LaTeX Font Info:    Font shape `TS1/pag/b/n' in size <10> not available
+(Font)              Font shape `TS1/pag/db/n' tried instead on input line 4049.
+
+Package mdframed Info: mdframed works in twoside mode on input line 4059.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4059.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4073--4074
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4088.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4088.
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 4102--4103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4108--4109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4133--4134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4137--4138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4139--4140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4141--4142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4146--4147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4149--4150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4150--4151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4151--4152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4154--4155
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+Underfull \hbox (badness 10000) in paragraph at lines 4201--4202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4203--4204
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4206.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4206.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4212--4213
+
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 4219--4220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4223--4224
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4225.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4225.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4237--4238
+
+ []
+
+<Pictures//boxplot1.png, id=1983, 445.665pt x 337.86224pt>
+File: Pictures//boxplot1.png Graphic file (type png)
+<use Pictures//boxplot1.png>
+Package pdftex.def Info: Pictures//boxplot1.png  used on input line 4242.
+(pdftex.def)             Requested size: 311.96336pt x 236.50194pt.
+[83 <./Pictures//boxplot1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 4272--4273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4293--4294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4304--4305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4313--4314
+
+ []
+
+[84]
+<Pictures//boxplot2.pdf, id=2016, 361.35pt x 361.35pt>
+File: Pictures//boxplot2.pdf Graphic file (type pdf)
+<use Pictures//boxplot2.pdf>
+Package pdftex.def Info: Pictures//boxplot2.pdf  used on input line 4333.
+(pdftex.def)             Requested size: 289.0804pt x 186.65036pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4342--4343
+
+ []
+
+<Pictures//boxplot3.pdf, id=2019, 361.35pt x 361.35pt>
+File: Pictures//boxplot3.pdf Graphic file (type pdf)
+<use Pictures//boxplot3.pdf>
+Package pdftex.def Info: Pictures//boxplot3.pdf  used on input line 4375.
+(pdftex.def)             Requested size: 289.0804pt x 232.17484pt.
+[85 <./Pictures//boxplot2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4387--4388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4410--4411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4412--4413
+
+ []
+
+[86 <./Pictures//boxplot3.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4430--4431
+
+ []
+
+[87] [88
+
+]
+Capítulo 8.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 4474.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4477--4478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4497
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4505.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4505.
+[89]
+Package mdframed Info: Not enough space on this page on input line 4509.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4538--4539
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4546--4547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4557--4558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4559--4560
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4582--4583
+
+ []
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 4587--4588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4611--4612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4614--4615
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4617.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4617.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4628--4629
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4662--4663
+
+ []
+
+
+Underfull \vbox (badness 2772) has occurred while \output is active []
+
+ [91]
+Underfull \hbox (badness 10000) in paragraph at lines 4690--4691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4721--4722
+
+ []
+
+[92]
+Package mdframed Info: mdframed works in twoside mode on input line 4725.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4725.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4747--4748
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4750--4751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4769--4770
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4772.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4772.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4781--4782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4785--4786
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 4822--4823
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4825.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4825.
+Package mdframed Info: mdframed works in twoside mode on input line 4838.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4838.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4846--4847
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4848--4849
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4876--4877
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4887--4888
+
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 4893--4894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4930--4931
+
+ []
+
+[95]
+Underfull \hbox (badness 10000) in paragraph at lines 4955--4956
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 4958.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4958.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4982--4983
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5013--5014
+
+ []
+
+[96]
+Package mdframed Info: mdframed works in twoside mode on input line 5016.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5016.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5030--5031
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5034--5035
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5039--5040
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5065--5066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5068--5069
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5069--5070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5070--5071
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5077--5078
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5079--5080
+
+ []
+
+
+Overfull \hbox (12.08286pt too wide) in paragraph at lines 5086--5105
+ [][] 
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 5109--5110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5112--5113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5114--5116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5117--5118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5119--5121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5128--5129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5150--5151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5152--5153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5154--5155
+
+ []
+
+[98]
+Underfull \hbox (badness 10000) in paragraph at lines 5157--5158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5169--5170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5200--5201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5202--5203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5204--5205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5206--5207
+
+ []
+
+[99] [100
+
+]
+Capítulo 9.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 5219.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5228--5229
+
+ []
+
+<Pictures//assimetria1.png, id=2281, 328.22626pt x 304.7385pt>
+File: Pictures//assimetria1.png Graphic file (type png)
+<use Pictures//assimetria1.png>
+Package pdftex.def Info: Pictures//assimetria1.png  used on input line 5231.
+(pdftex.def)             Requested size: 262.58136pt x 243.79112pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5237--5238
+
+ []
+
+[101 <./Pictures//assimetria1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5244--5245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5251--5252
+
+ []
+
+<Pictures//assimetria2.png, id=2288, 333.04425pt x 283.65974pt>
+File: Pictures//assimetria2.png Graphic file (type png)
+<use Pictures//assimetria2.png>
+Package pdftex.def Info: Pictures//assimetria2.png  used on input line 5254.
+(pdftex.def)             Requested size: 266.43575pt x 226.92809pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5264--5265
+
+ []
+
+<Pictures//assimetria3.png, id=2290, 333.04425pt x 274.626pt>
+File: Pictures//assimetria3.png Graphic file (type png)
+<use Pictures//assimetria3.png>
+Package pdftex.def Info: Pictures//assimetria3.png  used on input line 5267.
+(pdftex.def)             Requested size: 266.43575pt x 219.70108pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5278--5279
+
+ []
+
+<Pictures//assimetria4.png, id=2292, 333.04425pt x 273.4215pt>
+File: Pictures//assimetria4.png Graphic file (type png)
+<use Pictures//assimetria4.png>
+Package pdftex.def Info: Pictures//assimetria4.png  used on input line 5281.
+(pdftex.def)             Requested size: 266.43575pt x 218.73747pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102 <./Pictures//assimetria2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5291--5292
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5294.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5294.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5300--5301
+
+ []
+
+
+Underfull \vbox (badness 1552) has occurred while \output is active []
+
+ [103 <./Pictures//assimetria3.png> <./Pictures//assimetria4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5306--5307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5313--5314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5315--5316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5320--5321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5342--5343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5344--5345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5352--5353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5360--5361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5363--5364
+
+ []
+
+<Pictures//assimetria5.png, id=2312, 547.44525pt x 268.6035pt>
+File: Pictures//assimetria5.png Graphic file (type png)
+<use Pictures//assimetria5.png>
+Package pdftex.def Info: Pictures//assimetria5.png  used on input line 5367.
+(pdftex.def)             Requested size: 410.58293pt x 201.45213pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5380--5381
+
+ []
+
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 5410--5411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5412--5413
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5415.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5415.
+[105 <./Pictures//assimetria5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5427--5428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5433--5434
+
+ []
+
+<Pictures//curtose1.pdf, id=2341, 505.89pt x 361.35pt>
+File: Pictures//curtose1.pdf Graphic file (type pdf)
+<use Pictures//curtose1.pdf>
+Package pdftex.def Info: Pictures//curtose1.pdf  used on input line 5436.
+(pdftex.def)             Requested size: 354.12057pt x 189.20963pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5444--5445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5480--5481
+
+ []
+
+[106 <./Pictures//curtose1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5488--5489
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5496--5497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5503--5504
+
+ []
+
+[107] [108
+
+]
+Capítulo 10.
+File: Pictures//chapter_head_3.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_3.pdf>
+Package pdftex.def Info: Pictures//chapter_head_3.pdf  used on input line 5532.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5542--5543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5546--5547
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5575--5576
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5618--5619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5620--5621
+
+ []
+
+<Pictures//distconjquali1.pdf, id=2379, 505.89pt x 361.35pt>
+File: Pictures//distconjquali1.pdf Graphic file (type pdf)
+<use Pictures//distconjquali1.pdf>
+Package pdftex.def Info: Pictures//distconjquali1.pdf  used on input line 5624.
+
+(pdftex.def)             Requested size: 354.12057pt x 225.05989pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5635--5636
+
+ []
+
+[109]
+
+LaTeX Warning: Text page 110 contains only floats.
+
+[110 <./Pictures//distconjquali1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5668--5669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5674--5675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5678--5679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5699--5700
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5718--5719
+
+ []
+
+[111]
+<Pictures//distconjquali2.pdf, id=2433, 361.35pt x 361.35pt>
+File: Pictures//distconjquali2.pdf Graphic file (type pdf)
+<use Pictures//distconjquali2.pdf>
+Package pdftex.def Info: Pictures//distconjquali2.pdf  used on input line 5725.
+
+(pdftex.def)             Requested size: 252.94327pt x 225.05989pt.
+ [112 <./Pictures//distconjquali2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5741--5742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5760--5761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5788--5789
+
+ []
+
+[113]
+Underfull \hbox (badness 10000) in paragraph at lines 5824--5825
+
+ []
+
+<Pictures//distconjquali3.pdf, id=2471, 361.35pt x 361.35pt>
+File: Pictures//distconjquali3.pdf Graphic file (type pdf)
+<use Pictures//distconjquali3.pdf>
+Package pdftex.def Info: Pictures//distconjquali3.pdf  used on input line 5828.
+
+(pdftex.def)             Requested size: 252.94327pt x 225.05989pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5840--5841
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5843.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5843.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5855--5856
+
+ []
+
+[114 <./Pictures//distconjquali3.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5863--5864
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5868--5869
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5872.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5872.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 5886.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 5886.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5889--5890
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5904
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5923--5924
+
+ []
+
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 5939--5940
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5942.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5942.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5950--5951
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 5953.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5953.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5985--5986
+
+ []
+
+[116]
+Underfull \hbox (badness 10000) in paragraph at lines 6023--6024
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6033--6034
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6037--6038
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6064
+
+ []
+
+<Pictures//anbidvarquanti1.pdf, id=2531, 361.35pt x 361.35pt>
+File: Pictures//anbidvarquanti1.pdf Graphic file (type pdf)
+<use Pictures//anbidvarquanti1.pdf>
+Package pdftex.def Info: Pictures//anbidvarquanti1.pdf  used on input line 6066
+.
+(pdftex.def)             Requested size: 252.94327pt x 213.1097pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6079--6080
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+Underfull \hbox (badness 10000) in paragraph at lines 6096--6097
+
+ []
+
+[118 <./Pictures//anbidvarquanti1.pdf>]
+<Pictures//anbidvarquanti2.pdf, id=2583, 1084.05pt x 361.35pt>
+File: Pictures//anbidvarquanti2.pdf Graphic file (type pdf)
+<use Pictures//anbidvarquanti2.pdf>
+Package pdftex.def Info: Pictures//anbidvarquanti2.pdf  used on input line 6100
+.
+(pdftex.def)             Requested size: 433.61232pt x 121.77563pt.
+
+Overfull \hbox (6.82097pt too wide) in paragraph at lines 6100--6102
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6108--6109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6114--6115
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 6117.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6117.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6124--6125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6126--6127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6129--6130
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 6132.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6132.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6139--6140
+
+ []
+
+[119 <./Pictures//anbidvarquanti2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 6141--6142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6143--6144
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 6147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6147.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6187--6188
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [120]
+Underfull \hbox (badness 10000) in paragraph at lines 6205--6206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6211--6212
+
+ []
+
+[121] [122
+
+]
+File: Pictures//chapter_head_1.pdf Graphic file (type pdf)
+<use Pictures//chapter_head_1.pdf>
+Package pdftex.def Info: Pictures//chapter_head_1.pdf  used on input line 6241.
+
+(pdftex.def)             Requested size: 597.50787pt x 321.9182pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6245--6246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6247--6248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6249--6250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6251--6252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6253--6254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6255--6256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6257--6258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6259--6260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6261--6262
+
+ []
+
+\tf@ptc=\write7
+\openout7 = `main.ptc'.
+
+[123] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 35480 strings out of 479697
+ 635015 string characters out of 2877009
+ 1803180 words of memory out of 3000000
+ 49915 multiletter control sequences out of 15000+200000
+ 541587 words of font info for 484 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,19n,87p,1345b,2786s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX/
+fonts/type1/urw/avantgar/uagk8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/co
+urier/ucrb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
+:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX
+/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times
+/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (123 pages, 5410422 bytes).
+PDF statistics:
+ 3158 PDF objects out of 3580 (max. 8388607)
+ 1480 named destinations out of 1728 (max. 500000)
+ 144530 words of extra memory for PDF output out of 154059 (max. 10000000)
+
