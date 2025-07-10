@@ -8,4 +8,4 @@ Este repositório reúne o material didático do livro Análise Exploratória pa
 
 👩‍💻👨‍💻 Este projeto está aberto a contribuições! Se você quiser sugerir melhorias, correções ou novos conteúdos, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-
+Teste
