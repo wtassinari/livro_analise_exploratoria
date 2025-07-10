@@ -22,9 +22,11 @@ editor:
     wrap: 72
 ---
 
-# Prefácio
+# Análise Exploratória de Dados
 
-Este livro é inspirado na estrutura do *Advanced R* de Hadley Wickham. 
+![Capa do Livro](figuras\figura.png){.cover-image}
+
+Bem-vindo ao livro *Análise Exploratória de Dados*, um guia prático para explorar dados com R.
 
 Apresenta conceitos avançados da linguagem R com foco em:
 
@@ -34,3 +36,16 @@ Apresenta conceitos avançados da linguagem R com foco em:
 - Programação funcional
 
 Você pode usar este template para estruturar livros técnicos e cursos avançados em R.
+
+**Nota:** Este projeto é open-source. Contribuições são bem-vindas no [GitHub](https://github.com/seu-repositorio).
+
+---
+
+**ESTRELAS** | **1.7K** | **CONTRIBUTORES** | **7°**
+
+Última atualização: `r Sys.Date()`.
+
+
+
+
+

@@ -13,9 +13,12 @@ book:
     - 04-conclusao.qmd
 
   sidebar:
-    style: floating
-    search: true
-    collapse-level: 1
+    style: floating    
+    background: "#F8F9FA"  
+    search: true       
+    collapse-level: 1  
+    toc-links: true    
+    logo: "figura.png"   
 
   page-navigation: true
 

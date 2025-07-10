@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Análise Exploratória de Dados",
     "section": "",
-    "text": "1 Prefácio\nEste livro é inspirado na estrutura do Advanced R de Hadley Wickham.\nApresenta conceitos avançados da linguagem R com foco em:\n\nAmbientes\nAvaliação não padrão\nMetaprogramação\nProgramação funcional\n\nVocê pode usar este template para estruturar livros técnicos e cursos avançados em R.",
+    "text": "1 Análise Exploratória de Dados\n\n\n\nCapa do Livro\n\n\nBem-vindo ao livro Análise Exploratória de Dados, um guia prático para explorar dados com R.\nApresenta conceitos avançados da linguagem R com foco em:\n\nAmbientes\nAvaliação não padrão\nMetaprogramação\nProgramação funcional\n\nVocê pode usar este template para estruturar livros técnicos e cursos avançados em R.\nNota: Este projeto é open-source. Contribuições são bem-vindas no GitHub.\n\nESTRELAS | 1.7K | CONTRIBUTORES | 7°\nÚltima atualização: r Sys.Date().",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Análise Exploratória de Dados</span>"
     ]
