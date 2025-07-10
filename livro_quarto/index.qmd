@@ -1,0 +1,36 @@
+---
+title: "Análise Exploratória de Dados"
+subtitle: "Aplicada à Ciência de Dados"
+author:
+    - "Adriana Oliveira Andrade"
+    - "Diógenes Ferreira Filho"
+date: today
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toggle: true
+    self-contained: true
+    toc: true
+    toc-title: "Conteúdo"
+    number-sections: true
+    code-fold: false
+lang: pt-BR
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Prefácio
+
+Este livro é inspirado na estrutura do *Advanced R* de Hadley Wickham. 
+
+Apresenta conceitos avançados da linguagem R com foco em:
+
+- Ambientes
+- Avaliação não padrão
+- Metaprogramação
+- Programação funcional
+
+Você pode usar este template para estruturar livros técnicos e cursos avançados em R.
