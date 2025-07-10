@@ -7,10 +7,10 @@ book:
   date: today
   chapters:
     - index.qmd
-    - 01-introducao.qmd
-    - 02-metodologia.qmd
-    - 03-resultados.qmd
-    - 04-conclusao.qmd
+    - capitulo1.qmd
+    - capitulo2.qmd
+    - capitulo3.qmd
+    - capitulo4.qmd
 
   sidebar:
     style: floating    
@@ -18,7 +18,7 @@ book:
     search: true       
     collapse-level: 1  
     toc-links: true    
-    logo: "figura.png"   
+    logo: "logo_ufrrj.jpg"   
 
   page-navigation: true
 
@@ -32,7 +32,7 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    number-sections: true
+    number-sections: false
     fig-cap-location: bottom
     anchor-sections: true
 

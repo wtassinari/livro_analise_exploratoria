@@ -22,7 +22,7 @@ editor:
     wrap: 72
 ---
 
-# Análise Exploratória de Dados
+# Apresentação
 
 ![Capa do Livro](figuras\figura.png){.cover-image}
 

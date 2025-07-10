@@ -1,0 +1,11 @@
+# Capítulo 3
+
+Aqui são apresentados os principais resultados com gráficos, tabelas e análises.
+
+```{r}
+# Exemplo de gráfico em R
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point()
+```

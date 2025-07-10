@@ -4,44 +4,84 @@
     "href": "index.html",
     "title": "Análise Exploratória de Dados",
     "section": "",
-    "text": "1 Análise Exploratória de Dados\n\n\n\nCapa do Livro\n\n\nBem-vindo ao livro Análise Exploratória de Dados, um guia prático para explorar dados com R.\nApresenta conceitos avançados da linguagem R com foco em:\n\nAmbientes\nAvaliação não padrão\nMetaprogramação\nProgramação funcional\n\nVocê pode usar este template para estruturar livros técnicos e cursos avançados em R.\nNota: Este projeto é open-source. Contribuições são bem-vindas no GitHub.\n\nESTRELAS | 1.7K | CONTRIBUTORES | 7°\nÚltima atualização: r Sys.Date().",
+    "text": "1 Apresentação\n\n\n\nCapa do Livro\n\n\nBem-vindo ao livro Análise Exploratória de Dados, um guia prático para explorar dados com R.\nApresenta conceitos avançados da linguagem R com foco em:\n\nAmbientes\nAvaliação não padrão\nMetaprogramação\nProgramação funcional\n\nVocê pode usar este template para estruturar livros técnicos e cursos avançados em R.\nNota: Este projeto é open-source. Contribuições são bem-vindas no GitHub.\n\nESTRELAS | 1.7K | CONTRIBUTORES | 7°\nÚltima atualização: r Sys.Date().",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Análise Exploratória de Dados</span>"
     ]
   },
   {
-    "objectID": "01-introducao.html",
-    "href": "01-introducao.html",
-    "title": "2  Introdução",
+    "objectID": "capitulo1.html",
+    "href": "capitulo1.html",
+    "title": "Capítulo 1",
     "section": "",
     "text": "A introdução apresenta o contexto do livro, objetivos gerais e específicos, e a motivação para o estudo.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introdução</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Capítulo 1</span>"
     ]
   },
   {
-    "objectID": "02-metodologia.html",
-    "href": "02-metodologia.html",
-    "title": "3  Metodologia",
+    "objectID": "capitulo2.html",
+    "href": "capitulo2.html",
+    "title": "Capítulo 2",
     "section": "",
     "text": "Nesta seção, são descritos os procedimentos metodológicos utilizados.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Metodologia</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Capítulo 2</span>"
     ]
   },
   {
-    "objectID": "03-resultados.html",
-    "href": "03-resultados.html",
-    "title": "4  Resultados",
+    "objectID": "capitulo3.html",
+    "href": "capitulo3.html",
+    "title": "Capítulo 3",
     "section": "",
     "text": "Aqui são apresentados os principais resultados com gráficos, tabelas e análises.\n\n# Exemplo de gráfico em R\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Resultados</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
     ]
   },
   {
-    "objectID": "04-conclusao.html",
-    "href": "04-conclusao.html",
+    "objectID": "capitulo4.html",
+    "href": "capitulo4.html",
+    "title": "Capítulo 4",
+    "section": "",
+    "text": "Encerramento com as principais descobertas, limitações e sugestões futuras.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Capítulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo1.html",
+    "href": "capitulo1.html",
+    "title": "2  Capítulo 1",
+    "section": "",
+    "text": "A introdução apresenta o contexto do livro, objetivos gerais e específicos, e a motivação para o estudo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Capítulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo2.html",
+    "href": "capitulo2.html",
+    "title": "3  Capítulo 2",
+    "section": "",
+    "text": "Nesta seção, são descritos os procedimentos metodológicos utilizados.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Capítulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo3.html",
+    "href": "capitulo3.html",
+    "title": "4  Capítulo 3",
+    "section": "",
+    "text": "Aqui são apresentados os principais resultados com gráficos, tabelas e análises.\n\n# Exemplo de gráfico em R\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo4.html",
+    "href": "capitulo4.html",
     "title": "5  Conclusão",
     "section": "",
     "text": "Encerramento com as principais descobertas, limitações e sugestões futuras.",
