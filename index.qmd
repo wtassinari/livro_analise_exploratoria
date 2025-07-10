@@ -9,8 +9,8 @@ format:
   html:
     theme:
       light: cosmo
-      dark: darkly
-    toggle: true
+      # dark: darkly
+    #toggle: true
     self-contained: true
     toc: true
     toc-title: "Conteúdo"

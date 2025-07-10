@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: "."
 
 book:
   title: "Análise Exploratória de Dados"
@@ -9,18 +10,22 @@ book:
     - 01-introducao.qmd
     - 02-metodologia.qmd
     - 03-resultados.qmd
+    - 04-conclusao.qmd
 
   sidebar:
-    style: "floating"
+    style: floating
     search: true
     collapse-level: 1
 
   page-navigation: true
 
+render:
+  by: chapter
+
 format:
   html:
     theme:
-      light: cosmo  # ou flatly, journal, etc.
+      light: cosmo
     code-copy: true
     code-overflow: wrap
     toc: true
